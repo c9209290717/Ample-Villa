@@ -24,7 +24,7 @@
             width: 100%;
 
             height: 100px;
-            font-size: 46.6px;
+            font-size: 40px;
             font-family: 'Century Schoolbook', sans-serif;
             color: rgb(184, 226, 255);
             /* background-color: blue */
@@ -32,42 +32,48 @@
         }
 
         nav .container {
+            width: 90%;
             max-width: 1720px;
             height: 100px;
             margin: auto;
 
         }
 
-        .logo {
+      
+        .logo{
             position: relative;
         }
 
-        .logo-picture {
-            width: 70px;
-            height: 70px;
+        .logo-picture  img{
+            width: 250px;
             float: left;
+            position: absolute;
+            top: 18px;
+            
 
+            
         }
 
-        .logo-text {
+        /* .logo-text {
             height: 70px;
             float: left;
             position: absolute;
             top: 8px;
             left: 94px;
-        }
+        } */
 
         /* 漢堡 */
         .barger {
             float: right;
-
+            width: 400px;
+            position: relative;
         }
 
         label img {
             width: 70px;
             height: 40px;
 
-            transform: translate(316px, 22px);
+            transform: translate(327px, 28px);
         }
 
         input {
@@ -76,11 +82,16 @@
 
         .menu {
             /* display: none; */
+            background-color: white;
             list-style: none;
             margin: unset;
             padding: unset;
             max-height: 0;
             overflow: hidden;
+            position: absolute;
+            top:100px;
+            left: 20px;
+
         }
 
         input:checked~.menu {
@@ -114,6 +125,13 @@
         }
 
         /* main測試 */
+        main .container {
+            width: 90%;
+            max-width: 1720px;
+           
+            margin: auto;
+
+        }
         .p {
             max-width: 1719px;
             height: 968px;
@@ -291,9 +309,29 @@
             top: 56px;
             left: 41%;
         }
-        @media(max-width:414px){
-            
+        @media(max-width:720px){
+            .logo-picture  img{
+                width: 200px;
+               
+                position: absolute;
+                top: 25px;
+            } 
+            .barger img {
+                width: 40px;
+                height: 30px;
+            }
+            label img {
+                
+                transform: translate(327px, 38px);
+            } 
+            nav {
+                font-size: 25px;
+            }
+            .menu li {
+                width: 330px;
+            }
         }
+        
     </style>
 </head>
 
@@ -303,9 +341,9 @@
             <div class="nav-bar">
                 <div class="logo">
                     <div class="logo-picture">
-                        <img style="width: 70px;height: 70px;" src="./img/logo.jpg" alt="">
+                        <img  src="./img/nav-logo.png" alt="">
                     </div>
-                    <div class="logo-text">Ample Villa</div>
+                    <!-- <div class="logo-text">Ample Villa</div> -->
                 </div>
                 <div class="barger">
 
@@ -328,7 +366,10 @@
     </nav>
 
     <main>
-        <div class="p"></div>
+        <div class="container">
+            <div class="p"></div>
+        </div>
+        
     </main>
 
     <footer>
