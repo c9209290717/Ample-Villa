@@ -105,14 +105,17 @@
             font-weight: bold;
             font-family: 微軟正黑體;
         }
-        .form-group label{
+
+        .form-group label {
             font-family: 微軟正黑體;
             font-size: 36pt;
         }
-        .form-group input, .form-group select{
+
+        .form-group input,
+        .form-group select {
             font-size: 30pt;
         }
-        
+
 
         .room {
             text-align: left;
@@ -120,7 +123,8 @@
             font-family: 微軟正黑體;
 
         }
-        .room input{
+
+        .room input {
             font-size: 150%;
         }
 
@@ -135,9 +139,9 @@
             height: 0px;
             position: relative;
             padding-bottom: 22%;
-    
+
             margin: 5px 0 5px 15px;
-            
+
 
         }
 
@@ -152,9 +156,20 @@
 
         .room-information {
             margin: 5px 2rem 5px;
-            width: 42%;
+            width: 43%;
+            height: 0px;
             font-family: 微軟正黑體;
+            position: relative;
+            padding-bottom: 22%;
 
+        }
+
+        .room-information .row2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
 
         .room-title {
@@ -162,7 +177,8 @@
             font-family: 微軟正黑體;
             /* font-weight: bolder; */
         }
-        .room-eng{
+
+        .room-eng {
             letter-spacing: -5px;
         }
 
@@ -180,11 +196,12 @@
             width: 100%;
             height: 4px;
             background-color: rgb(156, 142, 248);
-            margin-top: 20px;
+            margin-top: 0.5%;
+
         }
 
         .room-first {
-            margin-top: 20px;
+            margin-top: 0.5%;
             font-family: 微軟正黑體;
             font-size: 24pt;
             font-weight: bold;
@@ -197,14 +214,24 @@
             line-height: 50px;
             width: 28%;
             margin-right: 3px;
+            position: relative;
+            padding-bottom: 22%;
 
+        }
+
+        .room-target .row3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
 
         .delete-line {
             text-decoration: line-through;
             font-size: 24pt;
             font-weight: 600;
-            margin: 24px 0;
+            margin: 13% 0;
             font-family: 微軟正黑體;
         }
 
@@ -212,29 +239,35 @@
             color: rgb(193, 39, 45);
             font-weight: bold;
             font-size: 60pt;
-            margin-bottom: 40px;
+            margin-bottom: 10%;
             font-family: 微軟正黑體;
         }
-        .number-group{
-            justify-content: space-between;
+       
+
+        .number-group {
+            width: 100%;
+            /* justify-content: space-between; */
         }
-        .room-number{
+
+        .room-number {
             font-family: 微軟正黑體;
             font-size: 32pt;
+            width: 100%;
             /* line-height: 42px; */
-            
+
 
         }
-        .room-number2{
+
+        .room-number2 {
             font-family: 微軟正黑體;
             font-size: 24pt;
             height: 50px;
             line-height: 42px;
             border: solid black 2px;
             width: 100%;
-            margin-bottom: 40px;
+            margin-bottom: 10%;
         }
-     
+
 
         .rent-now {
             width: 100%;
@@ -246,512 +279,571 @@
             line-height: 5rem;
             background-color: rgb(156, 142, 248);
             color: white;
-            
+
         }
-        #paypay{
+
+        #paypay {
             justify-content: space-between;
         }
-        #back-index{
+
+        #back-index {
             font-size: 48pt;
             font-family: 微軟正黑體;
-            color:rgb(184, 226, 255);
+            color: rgb(184, 226, 255);
             font-weight: bold;
-            
+
             /* min-width: 320px; */
         }
-        #pay-now{
+
+        #pay-now {
             font-size: 48pt;
             font-family: 微軟正黑體;
             font-weight: bold;
             background-color: rgb(184, 226, 255);
             color: white;
-            
+
             /* min-width: 320px; */
         }
-        @media(max-width:1653px){
+
+        @media(max-width:1653px) {
             .room-information {
-            margin: 5px 1rem 5px;
+                margin: 5px 1rem 5px;
 
-        }
-            
-
-        .room-title {
-            font-size: 32pt;
-            
-        }
-      
-
-        .peoples {
-            
-            font-size: 20pt;
-            
-            height: 42px;
-            
-            margin-top: 8px;
-        }
-
-        .room-line {
-            
-            margin-top: 16px;
-        }
-
-        .room-first {
-            margin-top: 16px;
-            
-            font-size: 20pt;
-         
-
-
-
-        }
-
-           
-           
-           
-            #back-index{
-            font-size: 40pt;
-            
-           
-        }
-        #pay-now{
-            font-size: 40pt;
-          
-        }
-        .delete-line {
-          
-            font-size: 20pt;
-            font-weight: bold;
-            margin: 20px 0;
-            font-family: 微軟正黑體;
-        }
-
-        .room-price {
-            
-            font-size:48pt;
-            margin-bottom: 32px;
-            
-        }
-        .room-number{
-            
-            font-size: 22pt;
-            
-           
-            
-
-        }
-        .room-number2{
-            font-size: 22pt;
-            margin-bottom: 32px;
-            
-        }
-        .rent-now {
-            
-            height: 5rem;
-            font-size: 42pt;
-           
-            line-height: 4rem;
-           
-            
-        }
-      
-        }
-        @media(max-width:1400px){
-            .room-title {
-            font-size: 28pt;
-            
-        }
-      
-
-        .peoples {
-            
-            font-size: 16pt;
-            
-            height: 36px;
-            
-            margin-top: 6px;
-        }
-
-        .room-line {
-            
-            margin-top: 12px;
-        }
-
-        .room-first {
-            margin-top: 12px;
-            
-            font-size: 18pt;
-         
-
-
-
-        }
-
-        .delete-line {
-          
-            font-size: 18pt;
-           
-            margin: 10px 0;
-       
-        }
-
-        .room-price {
-            
-            font-size:36pt;
-            margin-bottom: 10px;
-            
-        }
-        .room-number{
-            
-            font-size: 20pt;
-            
-           
-           
-            
-
-        }
-        .room-number2{
-            font-size: 20pt;
-            margin-bottom: 28px;
-            
-            
-        }
-        .rent-now {
-            
-            height: 5rem;
-            font-size: 36pt;
-           
-            line-height: 4rem;
-           
-            
-        }
-
-
-
-
-            #back-index{
-            font-size: 34pt;
-            
-            
-        }
-        #pay-now{
-            font-size: 34pt;
-            
-        }
-        }
-        
-        @media(max-width:1272px){
-            .form-group label , .form-group input, .form-group select{
-                font-size:26pt ;
             }
-            #rent-body{
+
+
+            .room-title {
+                font-size: 32pt;
+
+            }
+
+
+            .peoples {
+
+                font-size: 20pt;
+
+                height: 42px;
+
+                margin-top: 8px;
+            }
+
+            .room-line {
+
+                margin-top: 0.5%;
+            }
+
+            .room-first {
+                margin-top: 0.5%;
+
+                font-size: 20pt;
+
+
+
+
+            }
+
+
+
+
+            #back-index {
+                font-size: 40pt;
+
+
+            }
+
+            #pay-now {
+                font-size: 40pt;
+
+            }
+
+            .delete-line {
+
+                font-size: 20pt;
+                font-weight: bold;
+                margin: 20px 0;
+                font-family: 微軟正黑體;
+            }
+
+            .room-price {
+
+                font-size: 48pt;
+                margin-bottom: 32px;
+
+            }
+
+            .room-number {
+
+                font-size: 22pt;
+
+
+
+
+            }
+
+            .room-number2 {
+                font-size: 22pt;
+                margin-bottom: 32px;
+
+            }
+
+            .rent-now {
+
+                height: 5rem;
+                font-size: 42pt;
+
+                line-height: 4rem;
+
+
+            }
+
+        }
+
+        @media(max-width:1400px) {
+            .room-title {
+                font-size: 28pt;
+
+            }
+
+
+            .peoples {
+
+                font-size: 16pt;
+
+                height: 36px;
+
+                margin-top: 6px;
+            }
+
+            .room-line {
+
+                margin-top: 0.5%;
+            }
+
+            .room-first {
+                margin-top: 0.5%;
+
+                font-size: 18pt;
+
+
+
+
+            }
+
+            .delete-line {
+
+                font-size: 18pt;
+
+                margin: 10px 0;
+
+            }
+
+            .room-price {
+
+                font-size: 36pt;
+                margin-bottom: 10px;
+
+            }
+
+            .room-number {
+
+                font-size: 20pt;
+
+
+
+
+
+            }
+
+            .room-number2 {
+                font-size: 20pt;
+                margin-bottom: 28px;
+
+
+            }
+
+            .rent-now {
+
+                height: 5rem;
+                font-size: 36pt;
+
+                line-height: 4rem;
+
+
+            }
+
+
+
+
+            #back-index {
+                font-size: 34pt;
+
+
+            }
+
+            #pay-now {
+                font-size: 34pt;
+
+            }
+        }
+
+        @media(max-width:1272px) {
+
+            .form-group label,
+            .form-group input,
+            .form-group select {
+                font-size: 26pt;
+            }
+
+            #rent-body {
                 padding: 60px 80px;
 
             }
-            
-           
-            #rent-title{
+
+
+            #rent-title {
                 font-size: 70pt;
             }
-            #rent-information{
+
+            #rent-information {
                 text-align: center;
                 font-size: 48pt;
             }
-            #back-index{
-            font-size: 32pt;
-            
-        }
-        #pay-now{
-            font-size: 32pt;
-            
-        }
-            
+
+            #back-index {
+                font-size: 32pt;
+
+            }
+
+            #pay-now {
+                font-size: 32pt;
+
+            }
+
 
         }
-        @media(max-width:1199px){
+
+        @media(max-width:1199px) {
             .room-pic {
-            width: 22%;
-            margin: 2px 0 2px 10px;
+                width: 22%;
+                margin: 2px 0 2px 10px;
 
-        }
-            .room{
+            }
+
+            .room {
                 /* display: flex; */
                 margin-top: 20px;
                 font-size: 20pt;
             }
-          
-            .room-radio{
+
+            .room-radio {
                 justify-content: flex-start;
                 /* width: 25%; */
-                
+
                 display: flex;
                 margin-top: 20px;
                 /* position: absolute;
                 right: 0rem; */
             }
-            
-            .room-radio input{
+
+            .room-radio input {
                 margin-left: 2rem;
-                
+
 
             }
-            .room .col-12{
+
+            .room .col-12 {
                 padding: unset;
             }
-            .room-number{
+
+            .room-number {
                 font-size: 16pt;
             }
+
             .room-title {
-            font-size: 22pt;
-            
+                font-size: 22pt;
+
+            }
+
+
+            .peoples {
+
+                font-size: 12pt;
+
+                height: 28px;
+
+                margin-top: 8px;
+            }
+
+            .room-line {
+
+                margin-top: 0.05%;
+            }
+
+            .room-first {
+                margin-top: 0.05%;
+
+                font-size: 16pt;
+
+
+
+
+            }
+
+            .delete-line {
+
+                font-size: 16pt;
+
+                margin: 2px 0;
+
+            }
+
+            .room-price {
+
+                font-size: 26pt;
+                margin-bottom: 6px;
+
+            }
+
+            .room-number {
+
+                font-size: 14pt;
+
+
+
+
+            }
+
+            .room-number2 {
+                font-size: 14pt;
+                margin-bottom: 6px;
+
+            }
+
+            .rent-now {
+
+                height: 4rem;
+                font-size: 26pt;
+
+                line-height: 3rem;
+
+
+            }
+
+
+
+
+
+            #back-index {
+                font-size: 28pt;
+
+            }
+
+            #pay-now {
+                font-size: 28pt;
+
+            }
         }
-      
 
-        .peoples {
-            
-            font-size: 12pt;
-            
-            height: 28px;
-            
-            margin-top: 8px;
-        }
-
-        .room-line {
-            
-            margin-top: 12px;
-        }
-
-        .room-first {
-            margin-top: 8px;
-            
-            font-size: 16pt;
-         
-
-
-
-        }
-
-        .delete-line {
-          
-            font-size: 16pt;
-           
-            margin: 2px 0;
-       
-        }
-
-        .room-price {
-            
-            font-size:26pt;
-            margin-bottom: 6px;
-            
-        }
-        .room-number{
-            
-            font-size: 14pt;
-           
-           
-            
-
-        }
-        .room-number2{
-            font-size: 14pt;
-            margin-bottom: 6px;
-            
-        }
-        .rent-now {
-            
-            height: 4rem;
-            font-size: 26pt;
-           
-            line-height: 3rem;
-           
-            
-        }
-
-
-
-
-
-            #back-index{
-            font-size: 28pt;
-            
-        }
-        #pay-now{
-            font-size: 28pt;
-            
-        }
-        }
-        @media(max-width:960px){
-            .room-pic{
+        @media(max-width:960px) {
+            .room-pic {
                 width: 100%;
                 margin: 5px 10px;
                 padding-bottom: 100%;
-                
+
             }
-            
+
 
             .room-information {
                 width: 100%;
-          
-            
-        }
-        .room-title{
-            font-size: 24pt;
-            margin-left: 10px;
-
-         
-        }
-      
-
-        .peoples {
-            
-            font-size: 18pt;
-            
-            height: 36px;
-            
-            margin-top: 8px;
-        }
-
-        .room-line {
-            
-            margin-top: 12px;
-            
-        }
-
-        .room-first {
-            margin-top: 8px;
-            margin-left: 10px;
-            font-size: 18pt;
-         
+                padding-bottom: 50%;
 
 
-
-        }
-        .room-target{
-            width: 100%;
-            padding: 0 10px;
-        }
-
-        .delete-line {
-          
-            font-size: 24pt;
-           
-            margin: 2px 0 0 10px;
-       
-        }
-
-        .room-price {
-            
-            font-size:36pt;
-            margin-bottom: 6px;
-            margin-left: 10px;
-            
-        }
-        .number-group{
-            padding: 0 75px;
-           
-        }
-        .room-number{
-            font-size: 26pt;
-            text-align: right;
-           
-            margin-left: 10px;
-           
-            
-
-        }
-        .room-number2{
-            font-size: 26pt;
-            margin-bottom: 6px;
-            
-            
-        }
-       
-
-        #back-index{
-            font-size: 24pt;
-            
-        }
-        #pay-now{
-            font-size: 24pt;
-            
-        }
-            
-
-        }
-        @media(max-width:768px){
-            .form-group label , .form-group input, .form-group select{
-                font-size:26pt ;
             }
-            #rent-body{
+
+            .room-title {
+                font-size: 24pt;
+                margin-left: 10px;
+
+
+            }
+
+
+            .peoples {
+
+                font-size: 18pt;
+
+                height: 36px;
+
+                margin-top: 8px;
+            }
+
+            .room-line {
+
+                margin-top: 12px;
+
+            }
+
+            .room-first {
+                margin-top: 8px;
+                margin-left: 10px;
+                font-size: 18pt;
+
+
+
+
+            }
+
+            .room-target {
+                width: 100%;
+                padding: 0 10px;
+            }
+
+            .delete-line {
+
+                font-size: 24pt;
+
+                margin: 2px 0 0 10px;
+
+            }
+
+            .room-price {
+
+                font-size: 36pt;
+                margin-bottom: 6px;
+                margin-left: 10px;
+
+            }
+
+            .number-group {
+                padding: 0 75px;
+
+            }
+
+            .room-number {
+                font-size: 26pt;
+                text-align: right;
+
+                margin-left: 10px;
+
+
+
+            }
+
+            .room-number2 {
+                font-size: 26pt;
+                margin-bottom: 6px;
+
+
+            }
+
+
+            #back-index {
+                font-size: 24pt;
+
+            }
+
+            #pay-now {
+                font-size: 24pt;
+
+            }
+
+
+        }
+
+        @media(max-width:768px) {
+
+            .form-group label,
+            .form-group input,
+            .form-group select {
+                font-size: 26pt;
+            }
+
+            #rent-body {
                 padding: 40px 80px;
 
             }
-            #rent-title{
+
+            #rent-title {
                 font-size: 60pt;
             }
-            #rent-information{
+
+            #rent-information {
                 text-align: center;
                 font-size: 48pt;
             }
-            .number-group{
+
+            .number-group {
                 padding: 0 20px;
             }
-            #back-index{
-            font-size: 26pt;
-            
-        }
-        #pay-now{
-            font-size: 26pt;
-            
-        }
-            
 
-        }
-        @media(max-width:655px){
-            main {
-            background-color: rgb(109, 230, 225);
-            width: 100%;
-            padding: 130px 30px 30px;
-            /* height: 2000px; */
+            #back-index {
+                font-size: 26pt;
 
-        }
-            .form-group label , .form-group input, .form-group select{
-                font-size:26pt ;
             }
-            #rent-body{
+
+            #pay-now {
+                font-size: 26pt;
+
+            }
+
+
+        }
+
+        @media(max-width:655px) {
+            main {
+                background-color: rgb(109, 230, 225);
+                width: 100%;
+                padding: 130px 30px 30px;
+                /* height: 2000px; */
+
+            }
+
+            .form-group label,
+            .form-group input,
+            .form-group select {
+                font-size: 26pt;
+            }
+
+            #rent-body {
                 padding: 40px 20px;
 
             }
-            #rent-title{
+
+            #rent-title {
                 font-size: 60pt;
             }
-            #rent-information{
+
+            #rent-information {
                 text-align: center;
                 font-size: 48pt;
             }
-            #back-index{
-            font-size: 24pt;
-            
-        }
-        #pay-now{
-            font-size: 24pt;
-            
-        }
+
+            #back-index {
+                font-size: 24pt;
+
+            }
+
+            #pay-now {
+                font-size: 24pt;
+
+            }
 
         }
-        @media(max-width:520px){
-          
-            #back-index{
-            font-size: 20pt;
-            
-        }
-        #pay-now{
-            font-size: 20pt;
-            
-        }
+
+        @media(max-width:520px) {
+
+            #back-index {
+                font-size: 20pt;
+
+            }
+
+            #pay-now {
+                font-size: 20pt;
+
+            }
 
         }
-       
+
 
 
         /* #origin{
@@ -845,9 +937,10 @@
                 <div class="form-row">
                     <div class="form-group col-xl-6 col-12">
                         <label for="inputPhone">電話</label>
-                        <input type="text" class="form-control" id="inputPhone" placeholder="Phone" oninput="value=value.replace(/[^\d]/g,'')">
+                        <input type="text" class="form-control" id="inputPhone" placeholder="Phone"
+                            oninput="value=value.replace(/[^\d]/g,'')">
                     </div>
-                    <div class="form-group col-xl-6 col-12" >
+                    <div class="form-group col-xl-6 col-12">
                         <label for="inputEmail">信箱</label>
                         <input type="email" class="form-control" id="inputEmail" placeholder="Email@">
                     </div>
@@ -872,7 +965,7 @@
                 </div>
                 <div class="form-row">
                     <div class="form-group col-lg-6">
-                        <label for="inputDay" >入住天數</label>
+                        <label for="inputDay">入住天數</label>
                         <select id="inputDay" class="form-control">
                             <!-- <option selected>1天</option> -->
                             <!-- <option class="days"></option> -->
@@ -976,11 +1069,15 @@
                             <div class="row">
                                 <div class="room-pic"><img src="https://dummyimage.com/501x301" alt=""></div>
                                 <div class="room-information">
-                                    <div class="row">
+                                    <div class="row row2">
                                         <div class="col-12">
                                             <div class="row">
-                                                <div class="col-6 room-title" style="padding:unset"><div class="row"><div class="col-5 room-eng">Venus</div>
-                                                <div class="col-6" style="padding: unset;">豪華房</div></div></div>
+                                                <div class="col-6 room-title" style="padding:unset">
+                                                    <div class="row">
+                                                        <div class="col-5 room-eng">Venus</div>
+                                                        <div class="col-6" style="padding: unset;">豪華房</div>
+                                                    </div>
+                                                </div>
                                                 <div class="col-5 peoples">適合人數︰4人</div>
                                             </div>
                                         </div>
@@ -992,38 +1089,49 @@
                                     </div>
                                 </div>
                                 <div class="room-target">
-                                    <div class="row" style="margin: unset;">
-                                        <div class="col-12 delete-line" style="padding: unset;">NT 44,192</div>
-
-                                    </div>
-                                    <div class="row" style="margin: unset;">
-                                        <div class="col-12 room-price" style="padding: unset;">NT 32,795</div>
-
-                                    </div>
-                                    <div class="row" style="margin: unset;">
-                                        <div class="col-12" style="padding: unset;">
-                                            <div class="row form-row number-group" style="margin: unset;">
-                                                <div class="col-6 room-number" style="padding: unset;margin: unset;">訂房數量︰</div>
-                                                <div class="col-6" style="padding:unset;">
-                                                    <select class="rooms room-number2">
-                                                        <option selected></option>
-                                                    </select>
-                                                    
-
-                                                    <!-- <select class="rooms form-control"> -->
-
+                                    <div class="row row3">
+                                        <div class="col-12">
+                                            <div class="row" style="margin: unset;">
+                                                <div class="col-12 delete-line" style="padding: unset;">NT 44,192</div>
+    
+                                            </div>
+                                            <div class="row" style="margin: unset;">
+                                                <div class="col-12 room-price" style="padding: unset;">NT 32,795</div>
+    
+                                            </div>
+                                            <div class="row" style="margin: unset;">
+                                                <div class="col-12" style="padding: unset;">
+                                                    <div class="row form-row number-group"
+                                                        style="margin: unset;padding: unset;">
+                                                        <div class="col-6 room-number"
+                                                            style="padding: unset;margin: unset;">訂房數量︰</div>
+                                                        <div class="col-6" style="padding:unset;">
+                                                            <select class="rooms room-number2">
+                                                                <option selected></option>
+                                                            </select>
+    
+    
+                                                            <!-- <select class="rooms form-control"> -->
+    
+                                                        </div>
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                            <div class="row" style="margin: unset;">
+                                                <div class="col-12">
+                                                    <input type="submit" value="立即預定" class="col-12 rent-now"
+                                                    style="padding:unset;">
                                                 </div>
                                             </div>
                                         </div>
+                                        
+                                    </div>
 
-                                    </div>
-                                    <div class="row" style="margin: unset;">
-                                        <input type="submit" value="立即預定" class="col-12 rent-now" style="padding:unset;">
-                                    </div>
                                 </div>
                             </div>
                         </div>
- 
+
                     </div>
 
 
@@ -1032,10 +1140,11 @@
                 <div class="form-row">
                     <div class="form-group col-md-12">
                         <label for="inputDay">備註</label>
-                        <textarea name="remark" id="remark" class="form-control" cols="30" rows="10" style="font-size: 30px;"></textarea>
-                        
+                        <textarea name="remark" id="remark" class="form-control" cols="30" rows="10"
+                            style="font-size: 30px;"></textarea>
+
                     </div>
-                    
+
                 </div>
                 <div class="row" id="paypay">
                     <div class="col-xl-3 col-md-5 col-6">
@@ -1074,7 +1183,7 @@
         </div>
         <div class="col-3"></div>
     </div> -->
-    
+
 
 
     <script>
