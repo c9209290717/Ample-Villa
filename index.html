@@ -96,7 +96,7 @@
 
         #video-logo {
             position: absolute;
-            top: 395px;
+            top: 45%;
             text-align: center;
 
 
@@ -111,7 +111,7 @@
 
         #video-text {
             position: absolute;
-            top: 481px;
+            top: 60%;
             text-align: center;
 
 
@@ -369,6 +369,7 @@
             #news-backgro {
                 height: calc(100vh - 50px);
                 min-height: 736px;
+                overflow-y: hidden;
             }
 
             #inside-logo {
@@ -581,10 +582,16 @@
         <div class="container2">
             <div class="row" style="position: relative;width: 100%;margin: unset;padding: unset;overflow: hidden;">
                 <div class="col-12" style="padding: unset;margin: unset;">
-                    <img alt="gallery" class="w-full object-cover h-full object-center block"
-                        src="https://dummyimage.com/501x301" id="videoplay">
+                    <!-- <img alt="gallery" class="w-full object-cover h-full object-center block"
+                        src="https://dummyimage.com/501x301" id="videoplay"> -->
+                        <video src="./img-index/test.mp4" loop autoplay id="myVideo"></video>    
+                        
 
                 </div>
+                <!-- <div class="video-box">
+                    <video src="./img-index/test.mp4" loop autoplay id="myVideo"></video>
+                    
+                </div> -->
                 <div class="col-12" id="video-logo">
                     <img src="./img-index/影片-logo.png" alt="">
                 </div>
