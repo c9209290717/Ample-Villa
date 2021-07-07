@@ -104,7 +104,10 @@ main{
         width: 85%;
     }
 }
+@media(max-width:1008px){
+    
 
+}
 @media(max-width:800px){
     .white{
         margin-top: 50px;
@@ -135,41 +138,5 @@ main{
         margin-right: 46px;
     }
 }
-/* @media(max-width:780px){
-    .white{
-        margin-top: 50px;
-    }
-    .title{
-        font-size: 40px;
-        margin: 15px 0 15px 0 ;
-    }
-    .login-form .form-group{
-        width: 404px;
-        margin: unset;
-        margin-top: 20px;
-        
-    }
-    .log{
-        width: 133px;
-      
-    }
-    .button{
-        width: 404px;
-        margin: unset;
-    }
-    .button a , .button-1 a{
-        font-size: 22px;
-       
-    }
-    .button-1{
-        height: 404px;
-      
-        
+
     
-    }
-    .forget{
-        margin-right: 151px;
-        margin-top: 10px;
-        padding-top: 10px;
-    }
-} */
