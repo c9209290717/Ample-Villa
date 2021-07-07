@@ -312,7 +312,7 @@
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputPhone">電話</label>
-                        <input type="number" class="form-control" id="inputPhone" placeholder="Phone">
+                        <input type="text" class="form-control" id="inputPhone" placeholder="Phone" oninput="value=value.replace(/[^\d]/g,'')">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="inputEmail">信箱</label>
@@ -633,7 +633,7 @@
                 <div class="form-row">
                     <div class="form-group col-md-12">
                         <label for="inputDay">備註</label>
-                        <textarea name="remark" id="remark" class="form-control" cols="30" rows="10"></textarea>
+                        <textarea name="remark" id="remark" class="form-control" cols="30" rows="10" style="font-size: 30px;"></textarea>
                         
                     </div>
                     
