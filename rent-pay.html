@@ -118,6 +118,10 @@
             font-size: 26pt;
 
         }
+        .day .form-control{
+            padding: unset;
+            padding:0 .75rem
+        }
 
 
         .form-group input,
@@ -310,6 +314,10 @@
 
 
         }
+        .room-number1 select{
+            border: solid rgb(184, 226, 255);
+            font-size: 22pt;
+        }
 
         .room-number2 {
             font-family: 微軟正黑體;
@@ -332,6 +340,7 @@
             line-height: 3rem;
             background-color: rgb(138, 185, 223);
             color: white;
+            border: unset;
 
         }
 
@@ -341,7 +350,7 @@
         }
 
         #back-index {
-            font-size: 48pt;
+            font-size: 36pt;
             font-family: 微軟正黑體;
             color: rgb(138, 185, 223);
             font-weight: bold;
@@ -350,7 +359,7 @@
         }
 
         #pay-now {
-            font-size: 48pt;
+            font-size: 36pt;
             font-family: 微軟正黑體;
             font-weight: bold;
             background-color: rgb(138, 185, 223);
@@ -1652,9 +1661,10 @@
                         </div>
                     </div>
                     <div class="form-row">
-                        <div class="form-group col-lg-6">
+                        <div class="form-group col-lg-6 day">
                             <label for="inputDay">入住天數</label>
                             <select id="inputDay" class="form-control">
+                                <option selected></option>
                                 <!-- <option selected>1天</option> -->
                                 <!-- <option class="days"></option> -->
 
@@ -1662,9 +1672,10 @@
 
                             </select>
                         </div>
-                        <div class="form-group col-lg-6 pass4">
+                        <div class="form-group col-lg-6 pass4 day" >
                             <label for="people">住宿人數</label>
                             <select id="people" class="form-control">
+                                <option selected></option>
                                 <!-- <option selected>Choose...</option>
                             <option>...</option> -->
                             </select>
@@ -1889,7 +1900,7 @@
         for (let index = 0; index < day.length; index++) {
             var content = '<option>' + day[index].d + '</option>';
             // console.log(content);
-            str += content;
+            // str += content;
 
             days.innerHTML += content;
 
