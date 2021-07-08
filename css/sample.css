@@ -254,20 +254,20 @@ main .container {
     justify-content: space-between;
     align-items: center;
 }
-.text-left {
+.text-left-1 {
     display: flex;
     padding-top: 105px;
     padding-left: 100px;
     width: auto;
 }
-.text-left span {
+.text-left-1 span {
     list-style: none;
     font-size: 22px;
     padding: 0px;
     display: block;
 
 }
-.text-left span a {
+.text-left-1 span a {
     text-decoration: none;
     color: white;
     width: auto;
@@ -275,10 +275,10 @@ main .container {
 
 }
 
-.text-left .ample-villa {
+.text-left-1 .ample-villa {
     margin-right: 60px;
 }
-.text-left .item{
+.text-left-1 .item{
     margin-bottom: 27px;
 }
 .text-right {
@@ -360,7 +360,7 @@ main .container {
     }
 }
 @media(max-width: 1008px) {
-    .text-left {
+    .text-left-1 {
         display: block;
         padding-right: 0px;
         padding-bottom: 0px;
@@ -372,7 +372,7 @@ main .container {
         display: none;
     }
 
-    /* .text-left::after {
+    /* .text-left-1::after {
     content: " ";
     position: absolute;
     top: 110%;
@@ -429,17 +429,17 @@ main .container {
     }
 
     .copyright .textarea::after {
-    content: " ";
-    position: absolute;
-    top: -1470%;
-    right: 5%;
-    width: 88%;
-    height: 2px;
+        content: " ";
+        position: absolute;
+        top: -1470%;
+        right: 5%;
+        width: 88%;
+        height: 2px;
 
-    background-color: white;
-    border: 1rpx solid lightgray;
+        background-color: white;
+        border: 1rpx solid lightgray;
 
-    margin-bottom: 10px;
+        margin-bottom: 10px;
     }
 
     .copyright .textarea::before {
@@ -557,7 +557,7 @@ main .container {
     }
 }
 @media(max-width:520px){
-    .text-left span{
+    .text-left-1 span{
         font-size: 20px;
     }
     .text-right ul {

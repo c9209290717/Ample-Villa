@@ -104,10 +104,7 @@ main{
         width: 85%;
     }
 }
-@media(max-width:1008px){
-    
 
-}
 @media(max-width:800px){
     .white{
         margin-top: 50px;
