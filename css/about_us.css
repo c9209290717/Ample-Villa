@@ -124,7 +124,7 @@
 .cover-text-2 h2{
     position: absolute;
     bottom: 9%;
-    right: 400px;
+    right: 500px;
     font-size: 50px;
     font-family: 'Century Schoolbook', sans-serif;
     color: white;
@@ -193,6 +193,15 @@
         width: 45%;
     }
 
+    .cover-about-us-04 img{
+
+        bottom: 80px;
+        left:30%;
+        width: 70px;
+        height: 80px;
+        
+    }
+
     
 }
 
@@ -256,7 +265,7 @@
 @media(max-width:906px){
 
     .cover-about-us-02 img{
-        width: 40%;
+        width: auto;
         height: 40%;
         right: 50px;
     
@@ -274,7 +283,7 @@
 @media(max-width:758px){
 
     .p{
-        height: 900px;
+        height: 800px;
     }
 
     .title{
@@ -283,6 +292,13 @@
 
     .cover-about-us-01 img{
         top: 75px;
+    }
+
+
+    .cover-about-us-02 img{
+        width: auto;
+        height: 35%;
+    
     }
 
     .cover-text{
@@ -295,17 +311,27 @@
 
     }
 
+    .cover-about-us-04 img{
+
+        bottom: 60px;
+        left:30%;
+        width: 50px;
+        height: 60px;
+        
+    }
+
+
 
 }
 
 @media(max-width:680px){
     .p{
-        height: 800px;
+        height: 750px;
     }
 
     .cover-about-us-02 img{
 
-        bottom: 150px;
+        bottom: 200px;
         top: unset;
         right: 20px;
     
@@ -313,29 +339,40 @@
 
     .cover-text{
         top: unset;
-        bottom: 150px;
-        font-size: 18px;
+        bottom: 75px;
+        font-size: 20px;
     }
 
     
     .cover-text h1{
-        font-size: 22px;
+        font-size: 24px;
     }
 
 
 }
 
-@media(max-width:450px){
+@media(max-width:460px){
 
     .p{
-        height: 750px;
+        height: 700px;
     }
 
-    /* .cover-about-us-02 img{
-        width: auto;
-        height: 28%;
-        right: 20px;
+    .cover-text{
+        bottom: 105px;
+        font-size: 18px;
+    }
+
+    .cover-text h1{
+
+        font-size: 20px;
+    }
+
+    .cover-about-us-02 img{
+        width: 40%;
+        height: 320px;
+        right: 15px;
+        bottom: 100px;
     
-    } */
+    }
 
 }
