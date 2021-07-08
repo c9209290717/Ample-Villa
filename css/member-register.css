@@ -1,0 +1,12 @@
+.login-form .form-number{
+    width: 670px;
+    height: 99px;
+    margin: auto;
+}
+.form-group .email, .form-group .password , .form-group .cellphone ,
+ .form-group .account , .form-group .confirm , .form-group .internation ,.form-group .birthday{
+    margin-bottom: 10px;
+}
+/* .form-group .confirm{
+    margin-top: 10px;
+} */
