@@ -18,7 +18,7 @@
 }
 
 .word-s{
-    font-size: 18px;
+    font-size: 22px;
 }
 .long{
     width: 660px;
@@ -33,6 +33,44 @@
     font-size: 23px;
     height: 54px;
     background-color: rgb(137,185,225);
+}
+label > input[type="radio"] {
+    display: none;
+}
+label > input[type="radio"] + *::before {
+    content: "";
+    display: inline-block;
+    vertical-align: bottom;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.3rem;
+    border-radius: 50%;
+    border-style: solid;
+    border-width: 0.1rem;
+    border-color: gray;
+    
+      
+}
+label > input[type="radio"]:checked + * {
+   
+}
+label > input[type="radio"]:checked + *::before {
+    background: radial-gradient(rgb(138,185,223) 0%, rgb(138,185,223) 40%, transparent 50%, transparent);
+    border-color: rgb(138,185,223);
+}
+  
+/* basic layout */
+fieldset {
+    margin: 20px;
+    max-width: 400px;
+}
+label > input[type="radio"] + * {
+    display: inline-block;
+    
+}
+span {
+    font-size: 26px;
+    
 }
 @media(max-width:800px){
     .login-form .form-number{
