@@ -244,6 +244,15 @@
         width: 45%;
     }
 
+    .cover-about-us-04 img{
+
+        bottom: 90px;
+        left:40%;
+        width: 50px;
+        height: 60px;
+        
+    }
+
 
 
     
@@ -284,6 +293,8 @@
     .cover-about-us-06{
         display: none;
     }
+
+
     
 }
 
@@ -303,7 +314,11 @@
 
     .cover-text{
         top: 650px;
+        font-size: 22px;
+        width: 45%;
     }
+
+
 }
 
 @media(max-width:758px){
@@ -322,10 +337,10 @@
 
 
     .cover-about-us-02 img{
-        width: 30%;
+        width: 270px;
         height: 320px;
         right: 55px;
-        bottom: 100px;
+        bottom: 130px;
         left: unset;
     
     }
@@ -333,6 +348,7 @@
     .cover-text{
         top: 500px;
         font-size: 22px;
+        width: 45%;
     }
 
     .cover-text h1{
@@ -342,8 +358,8 @@
 
     .cover-about-us-04 img{
 
-        bottom: 60px;
-        left:30%;
+        bottom: 65px;
+        left:55%;
         width: 50px;
         height: 60px;
         
@@ -358,18 +374,19 @@
         height: 750px;
     }
 
-    /* .cover-about-us-02 img{
+    .cover-about-us-02 img{
         width: 40%;
         height: 320px;
         right: 45px;
-        bottom: 100px;
+        bottom: 140px;
     
-    } */
+    }
 
     .cover-text{
         top: unset;
-        bottom: 75px;
+        bottom: 80px;
         font-size: 20px;
+        width: 42%;
     }
 
     
@@ -377,18 +394,73 @@
         font-size: 24px;
     }
 
+    .cover-about-us-04 img{
+
+        bottom: 65px;
+        left:55%;
+        width: 50px;
+        height: 60px;
+        
+    }
+}
+
+
+
+@media(max-width:592px){
+
+
+
+
+    .cover-text{
+        bottom: 100px;
+        width: 40%;
+    }
+
+    .cover-text h2{
+        font-size:20px ;
+    }
+
+    .cover-about-us-02 img{
+        width: 220px;
+        height: 320px;
+        right: 25px;
+        bottom: 130px;
+    }
+
+    
+
 
 }
 
-@media(max-width:460px){
+@media (max-width:536px) {
 
-    .p{
-        height: 700px;
+    .cover-about-us-04 img{
+
+        bottom: 40px;
+        left:25%;
+        width: 50px;
+        height: 60px;
+        
     }
 
     .cover-text{
-        bottom: 105px;
-        font-size: 18px;
+        bottom: 85px;
+        width: 38%;
+    }
+    
+}
+
+
+@media(max-width:480px){
+
+    .p{
+        height: 640px;
+    }
+
+    .cover-text{
+        bottom: 85px;
+        font-size: 14px;
+        width: 38%;
     }
 
     .cover-text h1{
@@ -396,12 +468,10 @@
         font-size: 20px;
     }
 
-    /* .cover-about-us-02 img{
-        width: 40%;
-        height: 320px;
-        right: 15px;
-        bottom: 100px;
-    
-    } */
-
+    .cover-about-us-02 img{
+        width: 180px;
+        height: 260px;
+        right: 25px;
+        bottom: 130px;
+    }
 }
