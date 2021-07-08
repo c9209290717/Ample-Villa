@@ -3,10 +3,58 @@
     height: 99px;
     margin: auto;
 }
+.login-form .form-number-date{
+    width: 670px;
+    height: 99px;
+    margin: auto;
+}
 .form-group .email, .form-group .password , .form-group .cellphone ,
- .form-group .account , .form-group .confirm , .form-group .internation ,.form-group .birthday{
+ .form-group .account , .form-group .confirm , .form-group .internation ,
+ .form-group .birthday{
     margin-bottom: 10px;
 }
-/* .form-group .confirm{
+.form-group .birthday , .form-group .date, .form-group .month {
     margin-top: 10px;
-} */
+}
+
+.word-s{
+    font-size: 18px;
+}
+.long{
+    width: 660px;
+    margin: auto;
+    height: 68px;
+    font-size: 36px;
+}
+.button-3{
+    margin-bottom: 90px;
+}
+.button-3 a {
+    font-size: 23px;
+    height: 54px;
+    background-color: rgb(137,185,225);
+}
+@media(max-width:800px){
+    .login-form .form-number{
+        width: 414px;
+        
+    }
+    .long{
+        width: 404px;
+      
+    }
+    .login-form .form-number-date{
+        width: 414px;
+        
+    }
+}
+@media(max-width:574px){
+    .login-form .form-number{
+        width: 414px;
+        height: 198px;
+    }
+    .login-form .form-number-date{
+        width: 414px;
+        height: 297px;
+    }
+}
