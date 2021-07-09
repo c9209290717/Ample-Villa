@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>線上訂房</title>
+    <title>線上訂房明細</title>
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
@@ -25,6 +25,98 @@
 
             box-sizing: border-box;
         }
+
+
+
+
+        /* .rdobutton_radio{
+  width: 25px;
+  height: 25px;
+} */
+
+        .rdobutton_label {
+            position: relative;
+            display: block;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            border: 5px solid rgb(138, 185, 223);
+            border-radius: 100%;
+            -moz-transition: background-color 0.2s ease-in;
+            -webkit-transition: background-color 0.2s ease-in;
+            -o-transition: background-color 0.2s ease-in;
+            transition: background-color 0.2s ease-in;
+        }
+
+        .rdobutton_label::before {
+            content: "";
+            position: absolute;
+            top: 12%;
+            left: 13%;
+            width: 22px;
+            height: 22px;
+            background-color: rgb(138, 185, 223);
+            border-radius: 100%;
+            opacity: 0;
+            -moz-transition: opacity 0.2s ease-in;
+            -webkit-transition: opacity 0.2s ease-in;
+            -o-transition: opacity 0.2s ease-in;
+            transition: opacity 0.2s ease-in;
+        }
+
+        input:checked+.rdobutton_label {
+            background-color: white;
+        }
+
+        .rdobutton_radio:checked+.rdobutton_label::before {
+            opacity: 1;
+        }
+
+        .rdobutton_radio {
+            display: none;
+        }
+
+        /* .bot {
+            position: relative;
+            line-height: 30px;
+        }
+
+        .bot input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            opacity: 0;
+        }
+
+        .bot label {
+            position: absolute;
+            left: 5px;
+            top: 3px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid #999;
+        }
+
+        .bot input:checked+label {
+            background-color: #0b83a1;
+            
+            border: 1px solid white 10px;
+            cursor: pointer;
+           
+        }
+
+        .bot input:checked+label::after {
+            position: absolute;
+            content: "";
+            width: 5px;
+            height: 10px;
+            top: 3px;
+            left: 6px;
+            border: 2px solid #fff;
+            border-top: none;
+            border-left: none;
+            transform: rotate(45deg)
+        } */
 
         nav {
             width: 100vw;
@@ -105,7 +197,8 @@
             margin-top: 7.4vh;
         }
 
-        #rent-information {
+        #rent-information,
+        #payway {
             font-size: 48pt;
             color: rgb(63, 117, 147);
             font-weight: bold;
@@ -118,9 +211,10 @@
             font-size: 26pt;
 
         }
-        .day .form-control{
+
+        .day .form-control {
             padding: unset;
-            padding:0 .75rem
+            padding: 0 .75rem
         }
 
 
@@ -166,11 +260,6 @@
 
 
         }
-        #arrivaltime{
-            font-family: 微軟正黑體;
-            font-size: 20pt;
-       
-        }
 
 
 
@@ -212,8 +301,8 @@
         }
 
         .room-information {
-            margin: 5px 0 5px 2rem;
-            width: 48%;
+            margin: 5px 2rem 5px;
+            width: 43%;
             height: 0px;
             font-family: 微軟正黑體;
             position: relative;
@@ -236,11 +325,7 @@
         }
 
         .room-eng {
-            
             letter-spacing: -5px;
-        }
-        .room-title .col-7{
-            text-align: center;
         }
 
         .peoples {
@@ -250,7 +335,7 @@
             text-align: center;
             height: 50px;
             font-family: 微軟正黑體;
-            margin: 12px 0 0 -20px;
+            margin-top: 12px;
         }
 
         .room-line {
@@ -258,6 +343,14 @@
             height: 4px;
             background-color: rgb(138, 185, 223);
             margin-top: 0.5%;
+
+        }
+
+        .spare-line {
+            width: 100%;
+            height: 3px;
+            background-color: rgb(109, 230, 225);
+            margin: 100px 0;
 
         }
 
@@ -273,8 +366,8 @@
 
         .room-target {
             line-height: 40px;
-            width: 27%;
-            /* margin-right: 3px; */
+            width: 28%;
+            margin-right: 3px;
             position: relative;
             padding-bottom: 22%;
 
@@ -300,8 +393,8 @@
             color: rgb(193, 39, 45);
             font-weight: bold;
             letter-spacing: -5px;
-            font-size: 48pt;
-            margin:8% 0;
+            font-size: 60pt;
+            margin: 8% 0;
             font-family: 微軟正黑體;
         }
 
@@ -313,17 +406,18 @@
 
         .room-number {
             font-family: 微軟正黑體;
-            font-size: 26pt;
+            font-size: 2.2rem;
             width: 100%;
             margin-bottom: 8%;
-            letter-spacing: -2px;
+            letter-spacing: 0em;
             /* margin-bottom: 7%;
            
             margin-right: -15px; */
 
 
         }
-        .room-number1 select{
+
+        .room-number1 select {
             border: solid rgb(184, 226, 255);
             font-size: 22pt;
         }
@@ -353,9 +447,55 @@
 
         }
 
-        #remark{
+        #remark {
             height: 300px;
         }
+
+        .paybox {
+            margin: 50px 0 0 0;
+        }
+
+        .payword {
+            margin: 0 0 0 1rem;
+            font-size: 26pt;
+            font-family: 微軟正黑體;
+            /* font-weight: bold; */
+            width: 100%;
+        }
+
+        .discript-for-pay {
+
+            font-size: 26pt;
+            /* font-weight: bold; */
+            font-family: 微軟正黑體;
+            margin: 2rem 0 3rem;
+            color: rgb(193, 39, 45);
+
+        }
+
+        .card-type {
+            margin: 2rem 0 2rem 0;
+        }
+
+        .card-type2 {
+            margin: 2rem 0 0 0;
+        }
+
+        .card-type .col-md-4 label {
+            margin: 0 1rem 0 0;
+        }
+
+        .form-group .creditcard {
+            font-size: 26pt;
+            font-family: 微軟正黑體;
+            /* font-weight: bold; */
+            width: 100%;
+
+
+        }
+
+
+
 
         #paypay {
             justify-content: space-between;
@@ -389,12 +529,9 @@
             }
 
 
-            /* .room-title {
+            .room-title {
                 font-size: 32pt;
 
-            } */
-            .room-title .col-7{
-                line-height: 70px;
             }
 
 
@@ -404,7 +541,7 @@
 
                 height: 42px;
 
-                margin-top: 18px;
+                margin-top: 8px;
             }
 
             .room-line {
@@ -445,7 +582,7 @@
 
             .room-number {
                 font-family: 微軟正黑體;
-                font-size: 22pt;
+                font-size: 2rem;
                 width: 100%;
                 line-height: 60px;
                 margin-bottom: 2%;
@@ -477,7 +614,7 @@
 
         @media(max-width:1653px) {
             .room-information {
-                margin: 5px 0 5px 1rem;
+                margin: 5px 1rem 5px;
 
             }
 
@@ -494,7 +631,7 @@
 
                 height: 42px;
 
-                margin-top: 16px;
+                margin-top: 8px;
             }
 
             .room-line {
@@ -575,19 +712,10 @@
         }
 
         @media(max-width:1500px) {
-            .room-information{
-                margin-right: -1rem;
-            }
-            .room-target{
-                width: 28%;
-            }
 
             .room-title {
-                font-size: 30pt;
+                font-size: 28pt;
 
-            }
-            .room-title .col-7{
-                line-height: 60px;
             }
 
 
@@ -597,8 +725,7 @@
 
                 height: 36px;
 
-                margin: 15px 0 0 -2px;
-                
+                margin-top: 6px;
             }
 
             .room-line {
@@ -677,7 +804,7 @@
 
         @media(max-width:1400px) {
             .room-title {
-                font-size: 28pt;
+                font-size: 22pt;
 
             }
 
@@ -688,7 +815,7 @@
 
                 height: 36px;
 
-                margin-top: 14px;
+                margin-top: 6px;
             }
 
             .room-line {
@@ -697,7 +824,7 @@
             }
 
             .room-first {
-                margin-top: 0.2%;
+                margin-top: 0.5%;
 
                 font-size: 18pt;
 
@@ -780,7 +907,6 @@
             }
 
 
-
             #rent-title {
                 font-size: 60pt;
             }
@@ -788,21 +914,6 @@
             #rent-information {
                 text-align: center;
                 font-size: 48pt;
-            }
-            .room-title{
-                font-size: 26pt;
-            }
-            .room-eng{
-                letter-spacing: -2px;
-            }
-            .room-title .col-7{
-                line-height: 50px;
-            }
-            .peoples{
-                margin:10px 0 0 -2px
-            }
-            .room-first{
-                margin-top: 0;
             }
 
             #back-index {
@@ -1157,6 +1268,7 @@
                 font-size: 24pt;
                 height: 40px;
             }
+
             .number-group {
                 margin: unset;
                 height: 30pt;
@@ -1245,7 +1357,7 @@
 
             .empty-room {
 
-                font-size: 24pt; 
+                font-size: 24pt;
                 text-align: center;
 
                 margin: 2px 0 1rem 24px;
@@ -1253,7 +1365,7 @@
             }
 
             .room-price {
-               
+
 
                 font-size: 36pt;
                 margin-bottom: 1rem;
@@ -1299,7 +1411,7 @@
 
             .rent-now {
                 width: 97%;
-                margin-left:0.2rem;
+                margin-left: 24px;
             }
 
 
@@ -1343,20 +1455,20 @@
                 padding: 40px 34px;
 
             }
-            .peoples{
-                font-size: 16pt;
-            }
 
             #rent-title {
                 font-size: 36pt;
             }
 
+            .peoples {
+                font-size: 16pt;
+            }
+
+         
+
             #rent-information {
                 text-align: center;
                 font-size: 30pt;
-            }
-            .room-target{
-                margin-top: 30px;
             }
 
             .empty-room {
@@ -1380,6 +1492,18 @@
                 margin-bottom: 1rem;
             }
 
+            .card-type .col-md-4:nth-child(2) {
+                justify-content: flex-start;
+            }
+
+            .card-type .col-md-4:nth-child(2) {
+                justify-content: center;
+            }
+
+            .card-type .col-md-4:nth-child(3) {
+                justify-content: flex-end;
+            }
+
             #back-index {
                 font-size: 26pt;
 
@@ -1401,6 +1525,49 @@
                 /* height: 2000px; */
 
             }
+
+            .rdobutton_label {
+                position: relative;
+                display: block;
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+                border: 3px solid rgb(138, 185, 223);
+                border-radius: 100%;
+                -moz-transition: background-color 0.2s ease-in;
+                -webkit-transition: background-color 0.2s ease-in;
+                -o-transition: background-color 0.2s ease-in;
+                transition: background-color 0.2s ease-in;
+            }
+
+            .rdobutton_label::before {
+                content: "";
+                position: absolute;
+                top: 8.15%;
+                left: 7%;
+                width: 16px;
+                height: 16px;
+                background-color: rgb(138, 185, 223);
+                border-radius: 100%;
+                opacity: 0;
+                -moz-transition: opacity 0.2s ease-in;
+                -webkit-transition: opacity 0.2s ease-in;
+                -o-transition: opacity 0.2s ease-in;
+                transition: opacity 0.2s ease-in;
+            }
+
+            input:checked+.rdobutton_label {
+                background-color: white;
+            }
+
+            .rdobutton_radio:checked+.rdobutton_label::before {
+                opacity: 1;
+            }
+
+            .rdobutton_radio {
+                display: none;
+            }
+
             /* .peoples{
                 font-size: ;
             } */
@@ -1412,7 +1579,7 @@
             }
 
             #rent-body {
-                padding: 40px 20px;
+                padding: 20px 20px;
 
             }
 
@@ -1425,8 +1592,15 @@
                 font-size: 30pt;
             }
 
+            .form-group label {
+                font-size: 24pt;
+            }
+
+            .form-group input {
+                font-size: 21pt;
+            }
+
             .room-target {
-                margin-top: 50px;
 
                 padding-bottom: 52%;
             }
@@ -1453,6 +1627,52 @@
                 margin-bottom: 1rem;
             }
 
+            .spare-line {
+                margin: 50px 0;
+            }
+            .forrwd{
+                position: absolute;
+                left: -40px;
+            }
+
+            .payword {
+                font-size: 24pt;
+                font-weight: unset;
+            }
+
+            #payway {
+                font-size: 30pt;
+                text-align: center;
+                margin: 0 0 10px;
+            }
+
+            .paybox {
+                margin: 10px 0 0 0;
+            }
+
+            .discript-for-pay {
+                font-weight: 500;
+                /* position:absolute;
+                left: 0; */
+
+            }
+
+            .form-group .creditcard {
+                font-size: 24pt;
+                font-weight: unset;
+
+            }
+            #paypay{
+                margin-top: 1220px;
+                padding-bottom: unset;
+                margin-bottom: 0px;
+            }
+            .card-type2 {
+    margin: 0rem 0 0 0;
+}
+
+
+
             #back-index {
                 font-size: 24pt;
 
@@ -1473,9 +1693,10 @@
         }
 
         @media(max-width:590px) {
-            .peoples{
-                font-size:15pt ;
+            .peoples {
+                font-size: 15pt;
             }
+
             .empty-room {
 
                 font-size: 24pt;
@@ -1501,15 +1722,18 @@
         }
 
         @media(max-width:575px) {
-            .room-title{
+            .room-title {
                 font-size: 18pt;
             }
-            .room-eng{
+
+            .room-eng {
                 letter-spacing: -0.1px;
             }
-            .peoples{
-                font-size:12pt ;
+
+            .peoples {
+                font-size: 12pt;
             }
+
             .room-target {
 
                 padding-bottom: 80%;
@@ -1521,6 +1745,10 @@
 
                 margin: 0 0 0.4rem 24px;
 
+            }
+
+            .card-type .col-md-4 label {
+                margin: unset;
             }
 
             .room-price {
@@ -1538,16 +1766,18 @@
         }
 
         @media(max-width:520px) {
-            .room-title{
+            .room-title {
                 font-size: 20pt;
             }
-            .room-eng{
+
+            .room-eng {
                 letter-spacing: -0.1px;
             }
-            .peoples{
-                font-size:14pt ;
+
+            .peoples {
+                font-size: 14pt;
             }
-            
+
             .room-target {
 
                 padding-bottom: 95%;
@@ -1662,7 +1892,7 @@
                 <br>
                 <div class="row">
                     <div class="col-12" id="rent-information">
-                        訂房表格
+                        線上訂房明細
                     </div>
                 </div>
                 <br>
@@ -1671,27 +1901,29 @@
                     <div class="form-row">
                         <div class="form-group col-xl-6 col-12">
                             <label for="inputName">姓名</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Name">
+                            <input type="text" class="form-control" id="inputName" placeholder="Name" readonly>
                         </div>
                         <div class="form-group col-xl-6 col-12 pass1">
                             <label for="inputID">身份證號碼/護照號碼</label>
-                            <input type="password" class="form-control" id="inputID" placeholder="ID/Passport Number">
+                            <input type="password" class="form-control" id="inputID" placeholder="ID/Passport Number"
+                                readonly>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-xl-6 col-12">
                             <label for="inputPhone">電話</label>
                             <input type="text" class="form-control" id="inputPhone" placeholder="Phone"
-                                oninput="value=value.replace(/[^\d]/g,'')">
+                                oninput="value=value.replace(/[^\d]/g,'')" readonly>
                         </div>
                         <div class="form-group col-xl-6 col-12 pass2">
                             <label for="inputEmail">信箱</label>
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Email@">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email@" readonly>
                         </div>
                     </div>
                     <div class="form-group">
                         <label for="inputAirplane">航班編號</label>
-                        <input type="text" class="form-control" id="inputAirplane" placeholder="Flight ID">
+                        <input type="text" class="form-control" id="inputAirplane" placeholder="0000-0000-0000"
+                            readonly>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-6 col-12">
@@ -1699,207 +1931,180 @@
 
                             <!-- <input type="datetime-local" name="checkintime" id="timechosen"> -->
                             <input type="datetime-local" class="form-control" id="checkintime"
-                                placeholder="2021/07/06 14:00">
+                                placeholder="2021/07/06 14:00" readonly>
                         </div>
                         <div class="form-group col-lg-6 col-12 pass3">
                             <label for="checkouttime">退房時間</label>
 
-                            <input type="datetime-local" class="form-control" name="checkouttime" id="checkouttime">
+                            <input type="datetime-local" class="form-control" name="checkouttime" id="checkouttime"
+                                readonly>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-group col-lg-6 day">
                             <label for="inputDay">入住天數</label>
-                            <select id="inputDay" class="form-control">
+                            <input type="text" class="form-control" id="inputDay" placeholder="2"
+                                oninput="value=value.replace(/[^\d]/g,'')" readonly>
+                            <!-- <select id="inputDay" class="form-control" >
                                 <option selected></option>
-                                <!-- <option selected>1天</option> -->
-                                <!-- <option class="days"></option> -->
+                              
 
 
 
-                            </select>
+                            </select> -->
                         </div>
-                        <div class="form-group col-lg-6 pass4 day" >
+                        <div class="form-group col-lg-6 pass4 day">
                             <label for="people">住宿人數</label>
-                            <select id="people" class="form-control">
+                            <input type="text" class="form-control" id="people" placeholder="4"
+                                oninput="value=value.replace(/[^\d]/g,'')" readonly>
+                            <!-- <select id="people" class="form-control">
                                 <option selected></option>
-                                <!-- <option selected>Choose...</option>
-                            <option>...</option> -->
-                            </select>
-                        </div>
-                    </div>
-                    <!-- <div class="row" style="position: relative;">
-                    <div class="col-xl-3 col-12 room">Single Room
-                        <div class="row">
-                            <div class="col-12 room-radio">
-                                <br>
-                                <input type="radio" name="single" class="single"> 0
-                                <br>
-                                <input type="radio" name="single" class="single"> 1
-                                <br>
-                                <input type="radio" name="single" class="single"> 2
-                                <br>
-                                <input type="radio" name="single" class="single"> 3
-                                <br>
-                                <input type="radio" name="single" class="single"> 4
-                                <br>
-                                <input type="radio" name="single" class="single"> 5
-
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-xl-3 room col-12">Single Room(Combine with bath/shower)
-                        <div class="row">
-                            <div class="col-12 room-radio">
-                                <br>
-
-                                <input type="radio" name="single-shower" class="single-shower" value="yes"> Yes
-                                <br>
-                                <input type="radio" name="single-shower" class="single-shower" value="no"> No
-                                
-
-                            </div>
-                        </div>
-
-                    </div>
-                    
-                    <div class="col-xl-3 room">Double Room
-                        <div class="row">
-                            <div class="col-12 room-radio">
-                                <br>
-                                <input type="radio" name="double" class="double" value="0"> 0
-                                <br>
-                                <input type="radio" name="double" class="double" value="1"> 1
-                                <br>
-                                <input type="radio" name="double" class="double" value="2"> 2
-                                <br>
-                                <input type="radio" name="double" class="double" value="3"> 3
-                                <br>
-                                <input type="radio" name="double" class="double" value="4"> 4
-                                <br>
-                                <input type="radio" name="double" class="double" value="5"> 5
-
-                            </div>
+                               
+                            </select> -->
                         </div>
                     </div>
 
-                    <div class="col-xl-3 room">Twin Room
-                        <div class="row">
-                            <div class="col-12 room-radio">
-                                <br>
-                                <input type="radio" name="twin" class="twin" value="0"> 0
-                                <br>
-                                <input type="radio" name="twin" class="twin" value="1"> 1
-                                <br>
-                                <input type="radio" name="twin" class="twin" value="2"> 2
-                                <br>
-                                <input type="radio" name="twin" class="twin" value="3"> 3
-                                <br>
-                                <input type="radio" name="twin" class="twin" value="4"> 4
-                                <br>
-                                <input type="radio" name="twin" class="twin" value="5"> 5
-
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
                     <br>
                     <div class="form-group">
                         <label for="arrivaltime">抵達時間</label>
-                        <select id="arrivaltime" class="form-control">
-                            <option selected></option>
-                        </select>
-                        <!-- <input type="datetime-local" class="form-control" id="arrivaltime"
-                            placeholder="2021/07/06 14:00"> -->
+                        <input type="text" class="form-control" id="arrivaltime" placeholder="2021/07/06 14:00"
+                            readonly>
                     </div>
                     <div class="form-group">
-                        <label for="room-class">預定房型</label>
-                        <div class="row" style="margin: unset;">
-                            <div class="col-12 room-class form-control" style="height: unset;">
-                                <div class="row" style="margin: unset;">
-                                    <div class="room-pic"><img src="https://dummyimage.com/501x301" alt=""></div>
-                                    <div class="room-information">
-                                        <div class="row row2">
-                                            <div class="col-12">
+                        <label for="rentroom">預訂房型</label>
+                        <input type="text" class="form-control" id="rentroom" placeholder="Venus 豪華房" readonly>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group col-xl-6 col-12">
+                            <label for="count">數量</label>
+                            <input type="text" class="form-control" id="count" placeholder="1"
+                                oninput="value=value.replace(/[^\d]/g,'')" readonly>
+                        </div>
+                        <div class="form-group col-xl-6 col-12 pass2">
+                            <label for="money">價錢</label>
+                            <input type="email" class="form-control" id="money" placeholder="NT $32,795" readonly>
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group col-md-12">
+                            <label for="remark">備註</label>
+                            <textarea name="remark" id="remark" class="form-control" cols="30" rows="10"
+                                style="font-size: 30px;" readonly placeholder="我們會開車抵達"></textarea>
+
+                        </div>
+
+                    </div>
+                    <div class="form-row">
+
+                        <div class="col-12 spare-line"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12" id="payway">
+                            付款方式
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 paybox" style="display: flex;">
+                            <input type="radio" name="payway" id="pay-at-time" class="rdobutton_radio">
+                            <label for="pay-at-time" class="rdobutton_label"></label>
+                            <div class="payword">現場付款</div>
+                        </div>
+                        <div class="col-12 paybox" style="display: flex;">
+                            <input type="radio" name="payway" id="pay-online" class="rdobutton_radio">
+                            <label for="pay-online" class="rdobutton_label"></label>
+                            <div class="payword" style="position:relative">網路信用卡付款
+                                <div class="row forrwd" style="margin: unset;">
+                                    <div class="col-12" style="padding: unset;">
+                                        <div class="discript-for-pay">
+                                            說明:本站採用SSL線上安全收款機制，目前接受VISA、MasterCard、JCB，若您使用其他位用卡，請使用傳真授權書支付訂購金額。</div>
+                                        <div class="row">
+                                            <div class="col-12">信用卡別:</div>
+                                        </div>
+                                        <div class="row card-type">
+    
+                                            <div class="col-xl-6 col-12">
                                                 <div class="row">
-                                                    <div class="col-sm-7 col-8 room-title" style="padding:unset">
-                                                        <div class="row">
-                                                            <div class="col-5 room-eng">Venus </div>
-                                                            <div class="col-7" style="padding: unset;">豪華房</div>
-                                                        </div>
+                                                    <div class="col-md-4 col-4" style="display: flex;padding: unset;"><input
+                                                            type="radio" name="paycard" id="pay-visa"
+                                                            class="rdobutton_radio">
+                                                        <label for="pay-visa" class="rdobutton_label"></label>
+                                                        <div class="payword2">VISA</div>
                                                     </div>
-                                                    <div class="col-sm-5 col-6 peoples">適合人數︰4人</div>
+                                                    <div class="col-md-4 col-5" style="display: flex;padding: unset;"><input
+                                                            type="radio" name="paycard" id="pay-master"
+                                                            class="rdobutton_radio">
+                                                        <label for="pay-master" class="rdobutton_label"></label>
+                                                        <div class="payword2">Master</div>
+                                                    </div>
+                                                    <div class="col-md-4 col-3" style="display: flex;padding: unset;"><input
+                                                            type="radio" name="paycard" id="pay-jcb"
+                                                            class="rdobutton_radio">
+                                                        <label for="pay-jcb" class="rdobutton_label"></label>
+                                                        <div class="payword2">JCB</div>
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-xl-6 col-12">
+                                                <label for="credit-card" class="creditcard">信用卡號</label>
+                                                <input type="text" class="form-control" id="credit-card">
+                                            </div>
+                                            <div class="form-group col-xl-6 col-12 pass1">
+                                                <label for="last3num" class="creditcard">請輸入信用卡背後末3碼驗証</label>
+                                                <input type="text" class="form-control" id="last3num">
+                                            </div>
+                                        </div>
+                                        <div class="form-row card-type2">
+                                            <div class="form-group col-xl-6 col-12">
+    
+                                                <label for="credit-time" class="creditcard">卡片效期(ex:4月16日)</label>
+                                                <div class="row" id="credit-time">
+                                                    <div class="col-5" style="padding: unset;padding-left: 15px;">
+                                                        <input type="text" class="form-control" id="card-month">
+    
+                                                    </div>
+                                                    <div class="col-1" style="padding: unset;">月</div>
+                                                    <div class="col-5" style="padding: unset;">
+                                                        <input type="text" class="form-control" id="card-day">
+                                                    </div>
+                                                    <div class="col-1" style="padding: unset;">日</div>
                                                 </div>
                                             </div>
-                                            <div class="col-12 room-line"></div>
-                                            <div class="col-12 room-first" style="padding: unset;">2張大床與1張日式床墊</div>
-                                            <div class="col-12 room-first" style="padding: unset;">2間浴室</div>
-                                            <div class="col-12 room-first" style="padding: unset;">私人泳池</div>
-                                            <div class="col-12 room-first" style="padding: unset;">免費早餐</div>
-                                        </div>
-                                    </div>
-                                    <div class="room-target">
-                                        <div class="row row3" style="margin:unset">
-                                            <div class="col-12" style="padding: unset;">
-                                                
-                                                <div class="row" style="margin: unset;">
-                                                    <div class="col-12 room-price" style="padding: unset;">NT 32,795
-                                                    </div>
-
-                                                </div>
-                                                <div class="row" style="margin: unset;">
-                                                    <div class="col-12" style="padding: unset;">
-                                                        <div class="row form-row number-group" style="padding: unset;">
-                                                            <div class="col-md-6 col-6 room-number"
-                                                                style="padding: unset;">訂房數量︰
-                                                            </div>
-                                                            <div class="col-md-6 col-5 room-number1"
-                                                                style="padding:unset;">
-                                                                <select class="rooms room-number2">
-                                                                    <option selected></option>
-                                                                </select>
-
-
-                                                                <!-- <select class="rooms form-control"> -->
-
-                                                            </div>
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-                                                <div class="row" style="margin: unset;">
-                                                    <div class="col-12 empty-room" style="padding: unset;">空房數量︰2間
-                                                    </div>
-
-                                                </div>
-                                                <div class="row" style="margin: unset;">
-                                                    <div class="col-12" style="padding: unset;">
-                                                        <input type="submit" value="立即預訂" class="col-12 rent-now"
-                                                            style="padding:unset;">
-                                                    </div>
-                                                </div>
+                                            <div class="form-group col-xl-6 col-12 pass1">
+                                                <label for="readypay" class="creditcard">付款金額</label>
+                                                <input type="text" class="form-control" id="readypay" readonly
+                                                    placeholder="NT$32,795">
                                             </div>
-
                                         </div>
-
+                                        <div class="form-row card-type2">
+                                            <div class="form-group col-xl-6 col-12">
+                                                <label for="card-master" class="creditcard">持卡人</label>
+                                                <input type="text" class="form-control" id="card-master">
+                                            </div>
+                                            <div class="form-group col-xl-6 col-12 pass1">
+                                                <label for="master-phone" class="creditcard">持卡人電話</label>
+                                                <input type="text" class="form-control" id="master-phone"
+                                                    oninput="value=value.replace(/[^\d]/g,'')">
+                                            </div>
+                                        </div>
+                                        <div class="form-group card-type2">
+                                            <label for="master-ID" class="creditcard">持卡人身份證號(外國人請輸入*後再輸入護照號碼)</label>
+                                            <input type="text" class="form-control" id="master-ID">
+                                        </div>
                                     </div>
+                                    
                                 </div>
                             </div>
 
                         </div>
 
-
-
                     </div>
-                    <div class="form-row">
-                        <div class="form-group col-md-12">
-                            <label for="remark">備註</label>
-                            <textarea name="remark" id="remark" class="form-control" cols="30" rows="10"
-                                style="font-size: 30px;"></textarea>
 
-                        </div>
 
-                    </div>
+
                     <div class="row" id="paypay">
                         <div class="col-xl-3 col-md-5 col-6">
                             <input type="button" value="回上一頁" id="back-index" class="form-control">
@@ -1911,33 +2116,24 @@
                     </div>
 
                 </form>
+
+
             </div>
         </div>
 
 
     </main>
-    <!-- <br>
-    <br>
-    <div class="row">
-        <div class="col-3"></div>
-        <div class="col-6">
-            <form>
-                <div class="form-group row">
-                  <label for="staticEmail" class="col-sm-2 col-form-label" style="font-size: 48px;line-height:48px;text-align: center;">Email</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="staticEmail" value="email@example.com">
-                  </div>
-                </div>
-                <div class="form-group row">
-                  <label for="inputPassword" class="col-sm-2 col-form-label" style="font-size: 24px;line-height: 50px;text-align: center;">Password</label>
-                  <div class="col-sm-10">
-                    <input type="password" class="form-control" id="inputPassword" placeholder="Password">
-                  </div>
-                </div>
-              </form>
-        </div>
-        <div class="col-3"></div>
+    <!-- <div class="rdobutton">
+        <input class="rdobutton_radio" type="radio" id="radioId" name="radioname" value="0"  >
+        <label class="rdobutton_label" for="radioId"></label>
+
+        <input class="rdobutton_radio" type="radio" id="radioId2" name="radioname" value="1" />
+        <label class="rdobutton_label" for="radioId2"></label>
     </div> -->
+
+
+
+
 
 
 
@@ -1962,38 +2158,6 @@
             people.innerHTML += person;
 
         }
-        var arrive = document.querySelector('#arrivaltime');
-        var arri = [{a:'上午  00:00-01:00'},{a:'上午  01:00-02:00'},{a:'上午  02:00-03:00'},{a:'上午  03:00-04:00'},{a:'上午  04:00-05:00'},{a:'上午  05:00-06:00'},{a:'上午  06:00-07:00'},{a:'上午  07:00-08:00'},{a:'上午  08:00-09:00'},{a:'上午  09:00-10:00'},{a:'上午  10:00-11:00'},{a:'上午  11:00-12:00'},{a:'下午  12:00-01:00'},{a:'下午  01:00-02:00'},{a:'下午  02:00-03:00'},{a:'下午  03:00-04:00'},{a:'下午  04:00-05:00'},{a:'下午  05:00-06:00'},{a:'下午  06:00-07:00'},{a:'下午  07:00-08:00'},{a:'下午  08:00-09:00'},{a:'下午  09:00-10:00'},{a:'下午  10:00-11:00'},{a:'下午  11:00-00:00'}];
-        for (let index = 0; index < arri.length; index++) {
-            var arritime = '<option>' + arri[index].a + '</option>'
-            arrive.innerHTML += arritime;
-            
-        }
-        var rooms = document.querySelector('.rooms');
-        var room = [{ r: '1間' }, { r: '2間' }, { r: '3間' }, { r: '4間' }];
-        for (let index = 0; index < room.length; index++) {
-            var roomss = '<option>' + room[index].r + '</option>'
-            rooms.innerHTML += roomss;
-
-        }
-        // var rooms2 = document.querySelector('.rooms2');
-        // for (let index = 0; index < room.length; index++) {
-        //     var roomss = '<option>' + room[index].r + '</option>'
-        //     rooms2.innerHTML += roomss;
-
-        // }
-        // var rooms3 = document.querySelector('.rooms3');
-        // for (let index = 0; index < room.length; index++) {
-        //     var roomss = '<option>' + room[index].r + '</option>'
-        //     rooms3.innerHTML += roomss;
-
-        // }
-        // var rooms4 = document.querySelector('.rooms4');
-        // for (let index = 0; index < room.length; index++) {
-        //     var roomss = '<option>' + room[index].r + '</option>'
-        //     rooms4.innerHTML += roomss;
-
-        // }
 
 
     </script>
