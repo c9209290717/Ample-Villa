@@ -97,7 +97,7 @@
         }
 
         #rent-title {
-            font-size: 100pt;
+            font-size: 60pt;
             text-align: center;
             font-weight: bold;
             color: rgb(63, 117, 147);
@@ -106,7 +106,7 @@
         }
 
         #rent-information {
-            font-size: 60pt;
+            font-size: 48pt;
             color: rgb(63, 117, 147);
             font-weight: bold;
             font-family: 微軟正黑體;
@@ -212,8 +212,8 @@
         }
 
         .room-information {
-            margin: 5px 2rem 5px;
-            width: 43%;
+            margin: 5px 0 5px 2rem;
+            width: 48%;
             height: 0px;
             font-family: 微軟正黑體;
             position: relative;
@@ -236,7 +236,11 @@
         }
 
         .room-eng {
+            
             letter-spacing: -5px;
+        }
+        .room-title .col-7{
+            text-align: center;
         }
 
         .peoples {
@@ -246,7 +250,7 @@
             text-align: center;
             height: 50px;
             font-family: 微軟正黑體;
-            margin-top: 12px;
+            margin: 12px 0 0 -20px;
         }
 
         .room-line {
@@ -269,8 +273,8 @@
 
         .room-target {
             line-height: 40px;
-            width: 28%;
-            margin-right: 3px;
+            width: 27%;
+            /* margin-right: 3px; */
             position: relative;
             padding-bottom: 22%;
 
@@ -296,7 +300,7 @@
             color: rgb(193, 39, 45);
             font-weight: bold;
             letter-spacing: -5px;
-            font-size: 60pt;
+            font-size: 48pt;
             margin:8% 0;
             font-family: 微軟正黑體;
         }
@@ -309,10 +313,10 @@
 
         .room-number {
             font-family: 微軟正黑體;
-            font-size: 2.2rem;
+            font-size: 26pt;
             width: 100%;
             margin-bottom: 8%;
-            letter-spacing: 0em;
+            letter-spacing: -2px;
             /* margin-bottom: 7%;
            
             margin-right: -15px; */
@@ -349,9 +353,14 @@
 
         }
 
+        #remark{
+            height: 300px;
+        }
+
         #paypay {
             justify-content: space-between;
             padding-bottom: 5vh;
+            margin-top: 100px;
         }
 
         #back-index {
@@ -380,9 +389,12 @@
             }
 
 
-            .room-title {
+            /* .room-title {
                 font-size: 32pt;
 
+            } */
+            .room-title .col-7{
+                line-height: 70px;
             }
 
 
@@ -392,7 +404,7 @@
 
                 height: 42px;
 
-                margin-top: 8px;
+                margin-top: 18px;
             }
 
             .room-line {
@@ -433,7 +445,7 @@
 
             .room-number {
                 font-family: 微軟正黑體;
-                font-size: 2rem;
+                font-size: 22pt;
                 width: 100%;
                 line-height: 60px;
                 margin-bottom: 2%;
@@ -465,7 +477,7 @@
 
         @media(max-width:1653px) {
             .room-information {
-                margin: 5px 1rem 5px;
+                margin: 5px 0 5px 1rem;
 
             }
 
@@ -482,7 +494,7 @@
 
                 height: 42px;
 
-                margin-top: 8px;
+                margin-top: 16px;
             }
 
             .room-line {
@@ -563,10 +575,19 @@
         }
 
         @media(max-width:1500px) {
+            .room-information{
+                margin-right: -1rem;
+            }
+            .room-target{
+                width: 28%;
+            }
 
             .room-title {
-                font-size: 28pt;
+                font-size: 30pt;
 
+            }
+            .room-title .col-7{
+                line-height: 60px;
             }
 
 
@@ -576,7 +597,8 @@
 
                 height: 36px;
 
-                margin-top: 6px;
+                margin: 15px 0 0 -2px;
+                
             }
 
             .room-line {
@@ -655,7 +677,7 @@
 
         @media(max-width:1400px) {
             .room-title {
-                font-size: 22pt;
+                font-size: 28pt;
 
             }
 
@@ -666,7 +688,7 @@
 
                 height: 36px;
 
-                margin-top: 6px;
+                margin-top: 14px;
             }
 
             .room-line {
@@ -675,7 +697,7 @@
             }
 
             .room-first {
-                margin-top: 0.5%;
+                margin-top: 0.2%;
 
                 font-size: 18pt;
 
@@ -758,13 +780,29 @@
             }
 
 
+
             #rent-title {
-                font-size: 70pt;
+                font-size: 60pt;
             }
 
             #rent-information {
                 text-align: center;
                 font-size: 48pt;
+            }
+            .room-title{
+                font-size: 26pt;
+            }
+            .room-eng{
+                letter-spacing: -2px;
+            }
+            .room-title .col-7{
+                line-height: 50px;
+            }
+            .peoples{
+                margin:10px 0 0 -2px
+            }
+            .room-first{
+                margin-top: 0;
             }
 
             #back-index {
@@ -1261,7 +1299,7 @@
 
             .rent-now {
                 width: 97%;
-                margin-left: 24px;
+                margin-left:0.2rem;
             }
 
 
@@ -1310,12 +1348,15 @@
             }
 
             #rent-title {
-                font-size: 60pt;
+                font-size: 36pt;
             }
 
             #rent-information {
                 text-align: center;
-                font-size: 48pt;
+                font-size: 30pt;
+            }
+            .room-target{
+                margin-top: 30px;
             }
 
             .empty-room {
@@ -1376,15 +1417,16 @@
             }
 
             #rent-title {
-                font-size: 60pt;
+                font-size: 36pt;
             }
 
             #rent-information {
                 text-align: center;
-                font-size: 48pt;
+                font-size: 30pt;
             }
 
             .room-target {
+                margin-top: 50px;
 
                 padding-bottom: 52%;
             }
@@ -1780,10 +1822,10 @@
                                         <div class="row row2">
                                             <div class="col-12">
                                                 <div class="row">
-                                                    <div class="col-sm-6 col-8 room-title" style="padding:unset">
+                                                    <div class="col-sm-7 col-8 room-title" style="padding:unset">
                                                         <div class="row">
-                                                            <div class="col-5 room-eng">Venus</div>
-                                                            <div class="col-6" style="padding: unset;">豪華房</div>
+                                                            <div class="col-5 room-eng">Venus </div>
+                                                            <div class="col-7" style="padding: unset;">豪華房</div>
                                                         </div>
                                                     </div>
                                                     <div class="col-sm-5 col-6 peoples">適合人數︰4人</div>
@@ -1797,7 +1839,7 @@
                                         </div>
                                     </div>
                                     <div class="room-target">
-                                        <div class="row row3">
+                                        <div class="row row3" style="margin:unset">
                                             <div class="col-12" style="padding: unset;">
                                                 
                                                 <div class="row" style="margin: unset;">
@@ -1832,7 +1874,7 @@
                                                 </div>
                                                 <div class="row" style="margin: unset;">
                                                     <div class="col-12" style="padding: unset;">
-                                                        <input type="submit" value="刪除" class="col-12 rent-now"
+                                                        <input type="submit" value="立即預訂" class="col-12 rent-now"
                                                             style="padding:unset;">
                                                     </div>
                                                 </div>

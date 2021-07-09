@@ -52,7 +52,7 @@
             content: "";
             position: absolute;
             top: 12%;
-            left: 12%;
+            left: 13%;
             width: 22px;
             height: 22px;
             background-color: rgb(138, 185, 223);
@@ -189,7 +189,7 @@
         }
 
         #rent-title {
-            font-size: 100pt;
+            font-size: 60pt;
             text-align: center;
             font-weight: bold;
             color: rgb(63, 117, 147);
@@ -199,7 +199,7 @@
 
         #rent-information,
         #payway {
-            font-size: 60pt;
+            font-size: 48pt;
             color: rgb(63, 117, 147);
             font-weight: bold;
             font-family: 微軟正黑體;
@@ -450,45 +450,57 @@
         #remark {
             height: 300px;
         }
-        .paybox{
+
+        .paybox {
             margin: 50px 0 0 0;
         }
 
-        .payword{
+        .payword {
             margin: 0 0 0 1rem;
-            font-size: 19.5pt;
+            font-size: 26pt;
             font-family: 微軟正黑體;
-            font-weight: bold;
+            /* font-weight: bold; */
             width: 100%;
         }
-        .discript-for-pay{
-            
-            font-size: 19.2pt;
-            font-weight: bold;
+
+        .discript-for-pay {
+
+            font-size: 26pt;
+            /* font-weight: bold; */
             font-family: 微軟正黑體;
             margin: 2rem 0 3rem;
-            
+            color: rgb(193, 39, 45);
+
         }
-        .card-type{
+
+        .card-type {
             margin: 2rem 0 2rem 0;
         }
-        .card-type .col-4 label{
+
+        .card-type2 {
+            margin: 2rem 0 0 0;
+        }
+
+        .card-type .col-md-4 label {
             margin: 0 1rem 0 0;
         }
-        .form-group .creditcard{
-            font-size: 19.5pt;
+
+        .form-group .creditcard {
+            font-size: 26pt;
             font-family: 微軟正黑體;
-            font-weight: bold;
+            /* font-weight: bold; */
             width: 100%;
-         
+
 
         }
 
-        
+
+
 
         #paypay {
             justify-content: space-between;
             padding-bottom: 5vh;
+            margin-top: 100px;
         }
 
         #back-index {
@@ -896,7 +908,7 @@
 
 
             #rent-title {
-                font-size: 70pt;
+                font-size: 60pt;
             }
 
             #rent-information {
@@ -1444,17 +1456,19 @@
 
             }
 
+            #rent-title {
+                font-size: 36pt;
+            }
+
             .peoples {
                 font-size: 16pt;
             }
 
-            #rent-title {
-                font-size: 60pt;
-            }
+         
 
             #rent-information {
                 text-align: center;
-                font-size: 48pt;
+                font-size: 30pt;
             }
 
             .empty-room {
@@ -1476,6 +1490,18 @@
             .number-group {
                 padding: 0 20px;
                 margin-bottom: 1rem;
+            }
+
+            .card-type .col-md-4:nth-child(2) {
+                justify-content: flex-start;
+            }
+
+            .card-type .col-md-4:nth-child(2) {
+                justify-content: center;
+            }
+
+            .card-type .col-md-4:nth-child(3) {
+                justify-content: flex-end;
             }
 
             #back-index {
@@ -1500,6 +1526,48 @@
 
             }
 
+            .rdobutton_label {
+                position: relative;
+                display: block;
+                width: 25px;
+                height: 25px;
+                cursor: pointer;
+                border: 3px solid rgb(138, 185, 223);
+                border-radius: 100%;
+                -moz-transition: background-color 0.2s ease-in;
+                -webkit-transition: background-color 0.2s ease-in;
+                -o-transition: background-color 0.2s ease-in;
+                transition: background-color 0.2s ease-in;
+            }
+
+            .rdobutton_label::before {
+                content: "";
+                position: absolute;
+                top: 8.15%;
+                left: 7%;
+                width: 16px;
+                height: 16px;
+                background-color: rgb(138, 185, 223);
+                border-radius: 100%;
+                opacity: 0;
+                -moz-transition: opacity 0.2s ease-in;
+                -webkit-transition: opacity 0.2s ease-in;
+                -o-transition: opacity 0.2s ease-in;
+                transition: opacity 0.2s ease-in;
+            }
+
+            input:checked+.rdobutton_label {
+                background-color: white;
+            }
+
+            .rdobutton_radio:checked+.rdobutton_label::before {
+                opacity: 1;
+            }
+
+            .rdobutton_radio {
+                display: none;
+            }
+
             /* .peoples{
                 font-size: ;
             } */
@@ -1511,17 +1579,25 @@
             }
 
             #rent-body {
-                padding: 40px 20px;
+                padding: 20px 20px;
 
             }
 
             #rent-title {
-                font-size: 60pt;
+                font-size: 36pt;
             }
 
             #rent-information {
                 text-align: center;
-                font-size: 48pt;
+                font-size: 30pt;
+            }
+
+            .form-group label {
+                font-size: 24pt;
+            }
+
+            .form-group input {
+                font-size: 21pt;
             }
 
             .room-target {
@@ -1550,6 +1626,52 @@
                 padding: 0 20px;
                 margin-bottom: 1rem;
             }
+
+            .spare-line {
+                margin: 50px 0;
+            }
+            .forrwd{
+                position: absolute;
+                left: -40px;
+            }
+
+            .payword {
+                font-size: 24pt;
+                font-weight: unset;
+            }
+
+            #payway {
+                font-size: 30pt;
+                text-align: center;
+                margin: 0 0 10px;
+            }
+
+            .paybox {
+                margin: 10px 0 0 0;
+            }
+
+            .discript-for-pay {
+                font-weight: 500;
+                /* position:absolute;
+                left: 0; */
+
+            }
+
+            .form-group .creditcard {
+                font-size: 24pt;
+                font-weight: unset;
+
+            }
+            #paypay{
+                margin-top: 1220px;
+                padding-bottom: unset;
+                margin-bottom: 0px;
+            }
+            .card-type2 {
+    margin: 0rem 0 0 0;
+}
+
+
 
             #back-index {
                 font-size: 24pt;
@@ -1623,6 +1745,10 @@
 
                 margin: 0 0 0.4rem 24px;
 
+            }
+
+            .card-type .col-md-4 label {
+                margin: unset;
             }
 
             .room-price {
@@ -1887,40 +2013,92 @@
                         <div class="col-12 paybox" style="display: flex;">
                             <input type="radio" name="payway" id="pay-online" class="rdobutton_radio">
                             <label for="pay-online" class="rdobutton_label"></label>
-                            <div class="payword" >網路信用卡付款
-                                <div class="discript-for-pay">說明:本站採用SSL線上安全收款機制，目前接受VISA、MasterCard、JCB，若您使用其他位用卡，請使用傳真授權書支付訂購金額。</div>
-                                <div class="row">
-                                    <div class="col-12">信用卡別:</div>
-                                </div>
-                                <div class="row card-type">
-
-                                    <div class="col-6">
+                            <div class="payword" style="position:relative">網路信用卡付款
+                                <div class="row forrwd" style="margin: unset;">
+                                    <div class="col-12" style="padding: unset;">
+                                        <div class="discript-for-pay">
+                                            說明:本站採用SSL線上安全收款機制，目前接受VISA、MasterCard、JCB，若您使用其他位用卡，請使用傳真授權書支付訂購金額。</div>
                                         <div class="row">
-                                            <div class="col-4" style="display: flex;padding: unset;"><input type="radio" name="paycard" id="pay-visa" class="rdobutton_radio">
-                                                <label for="pay-visa" class="rdobutton_label"></label>
-                                                <div class="payword2">VISA</div></div>
-                                            <div class="col-4" style="display: flex;padding: unset;"><input type="radio" name="paycard" id="pay-master" class="rdobutton_radio">
-                                                <label for="pay-master" class="rdobutton_label"></label>
-                                                <div class="payword2">Master</div></div>
-                                            <div class="col-4" style="display: flex;padding: unset;"><input type="radio" name="paycard" id="pay-jcb" class="rdobutton_radio">
-                                                <label for="pay-jcb" class="rdobutton_label"></label>
-                                                <div class="payword2">JCB</div></div>
+                                            <div class="col-12">信用卡別:</div>
                                         </div>
-
+                                        <div class="row card-type">
+    
+                                            <div class="col-xl-6 col-12">
+                                                <div class="row">
+                                                    <div class="col-md-4 col-4" style="display: flex;padding: unset;"><input
+                                                            type="radio" name="paycard" id="pay-visa"
+                                                            class="rdobutton_radio">
+                                                        <label for="pay-visa" class="rdobutton_label"></label>
+                                                        <div class="payword2">VISA</div>
+                                                    </div>
+                                                    <div class="col-md-4 col-5" style="display: flex;padding: unset;"><input
+                                                            type="radio" name="paycard" id="pay-master"
+                                                            class="rdobutton_radio">
+                                                        <label for="pay-master" class="rdobutton_label"></label>
+                                                        <div class="payword2">Master</div>
+                                                    </div>
+                                                    <div class="col-md-4 col-3" style="display: flex;padding: unset;"><input
+                                                            type="radio" name="paycard" id="pay-jcb"
+                                                            class="rdobutton_radio">
+                                                        <label for="pay-jcb" class="rdobutton_label"></label>
+                                                        <div class="payword2">JCB</div>
+                                                    </div>
+                                                </div>
+    
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-group col-xl-6 col-12">
+                                                <label for="credit-card" class="creditcard">信用卡號</label>
+                                                <input type="text" class="form-control" id="credit-card">
+                                            </div>
+                                            <div class="form-group col-xl-6 col-12 pass1">
+                                                <label for="last3num" class="creditcard">請輸入信用卡背後末3碼驗証</label>
+                                                <input type="text" class="form-control" id="last3num">
+                                            </div>
+                                        </div>
+                                        <div class="form-row card-type2">
+                                            <div class="form-group col-xl-6 col-12">
+    
+                                                <label for="credit-time" class="creditcard">卡片效期(ex:4月16日)</label>
+                                                <div class="row" id="credit-time">
+                                                    <div class="col-5" style="padding: unset;padding-left: 15px;">
+                                                        <input type="text" class="form-control" id="card-month">
+    
+                                                    </div>
+                                                    <div class="col-1" style="padding: unset;">月</div>
+                                                    <div class="col-5" style="padding: unset;">
+                                                        <input type="text" class="form-control" id="card-day">
+                                                    </div>
+                                                    <div class="col-1" style="padding: unset;">日</div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group col-xl-6 col-12 pass1">
+                                                <label for="readypay" class="creditcard">付款金額</label>
+                                                <input type="text" class="form-control" id="readypay" readonly
+                                                    placeholder="NT$32,795">
+                                            </div>
+                                        </div>
+                                        <div class="form-row card-type2">
+                                            <div class="form-group col-xl-6 col-12">
+                                                <label for="card-master" class="creditcard">持卡人</label>
+                                                <input type="text" class="form-control" id="card-master">
+                                            </div>
+                                            <div class="form-group col-xl-6 col-12 pass1">
+                                                <label for="master-phone" class="creditcard">持卡人電話</label>
+                                                <input type="text" class="form-control" id="master-phone"
+                                                    oninput="value=value.replace(/[^\d]/g,'')">
+                                            </div>
+                                        </div>
+                                        <div class="form-group card-type2">
+                                            <label for="master-ID" class="creditcard">持卡人身份證號(外國人請輸入*後再輸入護照號碼)</label>
+                                            <input type="text" class="form-control" id="master-ID">
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-xl-6 col-12">
-                                        <label for="credit-card" class="creditcard">信用卡號</label>
-                                        <input type="text" class="form-control" id="credit-dard">
-                                    </div>
-                                    <div class="form-group col-xl-6 col-12 pass1">
-                                        <label for="last3num" class="creditcard">請輸入信用卡背後末3碼驗証</label>
-                                        <input type="text" class="form-control" id="last3num">
-                                    </div>
+                                    
                                 </div>
                             </div>
-                            
+
                         </div>
 
                     </div>
