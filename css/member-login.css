@@ -34,7 +34,7 @@ main{
 }
 
 .form-group .email , .form-group .password{
-    margin-top: 10px;
+    margin-top: -3px;
 }
 .form-group .password{
     padding-bottom: 10px;
