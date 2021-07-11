@@ -1,4 +1,4 @@
-@import url('http://fonts.cdnfonts.com/css/century-schoolbook');
+/* @import url('http://fonts.cdnfonts.com/css/century-schoolbook'); */
 
 .p{
     background-color: rgba(137,185,223,255);
@@ -22,15 +22,14 @@
     position: absolute;
     bottom: 120px;
     right:60px;
-    
+
 }
 
 .cover-about-us-03 img{
 
-    position: absolute;
-    bottom: 0;
-    right:0;
-    
+    height: 1300px;
+    width: 100%;
+
 }
 
 .cover-about-us-04 img{
@@ -38,17 +37,9 @@
     position: absolute;
     bottom: 20px;
     left:0;
-    
+
 }
 
-/* .cover-about-us-05 img{
-    position: absolute;
-    bottom: 10%;
-    left: 16%;
-    width: 30%;
-    height: 25px;
-
-} */
 
 .cover-about-us-05{
 
@@ -157,6 +148,10 @@
     .p{
         height: 1120px;
     }
+    .cover-about-us-03 img{
+
+        height: 1120px
+    }
 
     .cover-about-us-04 img{
 
@@ -164,7 +159,7 @@
         left:30%;
         width: 70px;
         height: 80px;
-        
+
     }
 
     .cover-about-us-05{
@@ -200,7 +195,7 @@
         bottom: 2%;
     }
 
-    
+
 }
 
 @media(max-width:1128px){
@@ -232,7 +227,7 @@
         bottom: 5%;
     } */
 
-    
+
 }
 
 @media(max-width:1076px){
@@ -250,12 +245,12 @@
         left:40%;
         width: 50px;
         height: 60px;
-        
+
     }
 
 
 
-    
+
 }
 
 @media(max-width:996px){
@@ -271,11 +266,11 @@
         top: 100px;
     }
 
-    
+
     .title{
         font-size: 70px;
         top: 19px;
-    }   
+    }
 
 
     .cover-about-us-05 img{
@@ -295,7 +290,7 @@
     }
 
 
-    
+
 }
 
 @media(max-width:906px){
@@ -304,11 +299,17 @@
         height: 1000px;
     }
 
+    .cover-about-us-03 img{
+
+        height: 1000px;
+
+    }
+
     .cover-about-us-02 img{
         width: auto;
         height: 40%;
         right: 50px;
-    
+
     }
 
 
@@ -327,6 +328,12 @@
         height: 800px;
     }
 
+    .cover-about-us-03 img{
+
+        height: 800px;
+
+    }
+
     .title{
         font-size: 50px;
     }
@@ -342,7 +349,7 @@
         right: 55px;
         bottom: 130px;
         left: unset;
-    
+
     }
 
     .cover-text{
@@ -362,7 +369,7 @@
         left:55%;
         width: 50px;
         height: 60px;
-        
+
     }
 
 
@@ -374,12 +381,18 @@
         height: 750px;
     }
 
+    .cover-about-us-03 img{
+
+        height: 750px;
+
+    }
+
     .cover-about-us-02 img{
         width: 40%;
         height: 320px;
         right: 45px;
         bottom: 140px;
-    
+
     }
 
     .cover-text{
@@ -389,7 +402,7 @@
         width: 42%;
     }
 
-    
+
     .cover-text h1{
         font-size: 24px;
     }
@@ -400,7 +413,7 @@
         left:55%;
         width: 50px;
         height: 60px;
-        
+
     }
 }
 
@@ -427,7 +440,7 @@
         bottom: 130px;
     }
 
-    
+
 
 
 }
@@ -440,14 +453,14 @@
         left:25%;
         width: 50px;
         height: 60px;
-        
+
     }
 
     .cover-text{
         bottom: 85px;
         width: 38%;
     }
-    
+
 }
 
 
@@ -455,6 +468,12 @@
 
     .p{
         height: 640px;
+    }
+
+    .cover-about-us-03 img{
+
+        height: 640px;
+
     }
 
     .cover-text{
