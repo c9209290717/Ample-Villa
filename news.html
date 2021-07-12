@@ -157,13 +157,13 @@
             z-index: 3;
         }
 
-        #inside-logo2 {
+        .inside-logo2{
             margin: unset;
             padding: unset;
             position: absolute;
             right: 0rem;
             top: 150px;
-            z-index: 3;
+            z-index: 1;
         }
 
         #news-backgro {
@@ -275,8 +275,24 @@
             color: white;
             text-align: center;
         }
+        .page-last:hover, .page-next:hover{
+            text-decoration: none;
+        }
         .imgarrow{
-            justify-content: flex-end;
+            text-align: right;
+            
+            position: relative
+        }
+         .imgarrow img{
+            width: 100px;
+            height: 100px;
+           
+            position: relative;
+
+            text-align: right;
+        }
+        .forpad{
+            height: 150px;width: 100%;
         }
         @media(max-width:1757px){
             .main2 #news {
@@ -309,14 +325,14 @@
 
         #news-box1,
         #news-box3 {
-            padding-top: 240px;
+            padding-top: 220px;
             position: relative;
 
         }
 
         #news-box2,
         #news-box4 {
-            padding-top: 240px;
+            padding-top: 220px;
             position: relative;
         }
 
@@ -346,6 +362,7 @@
             left: 32%;
             z-index: 1;
         }
+        
 
         .newspic img {
             width: 600px;
@@ -421,7 +438,7 @@
             color: white;
             font-family: 新細明體;
             text-align: left;
-            margin-top: 55vh;
+            margin-top: 45vh;
             position: absolute;
             left: 7%;
             z-index: 1;
@@ -434,7 +451,7 @@
             color: white;
             font-family: 新細明體;
             text-align: left;
-            margin-top: 55vh;
+            margin-top: 45vh;
             position: absolute;
             left: 32%;
             z-index: 1;
@@ -453,12 +470,28 @@
         #mday3,
         #mday4 {
             font-family: 'Century Schoolbook', sans-serif;
-            font-size: 120px;
+            font-size: 100px;
             letter-spacing: -10px;
             transform: rotate(90deg);
             position: absolute;
             top: 13rem;
-            left: -14rem;
+            left: -180px;
+            opacity: 1;
+            color: white;
+        }
+        }
+        @media(max-width:1240px){
+            #mday,
+        #mday2,
+        #mday3,
+        #mday4 {
+            font-family: 'Century Schoolbook', sans-serif;
+            font-size: 100px;
+            letter-spacing: -10px;
+            transform: rotate(90deg);
+            position: absolute;
+            top: 13rem;
+            left: -200px;
             opacity: 1;
             color: white;
         }
@@ -580,8 +613,7 @@
                 opacity: 1;
                 color: white;
             }
-
-
+            
         }
 
         @media(max-width:768px) {
@@ -668,6 +700,28 @@
                 opacity: 1;
                 color: white;
             }
+            .page-last, .page, .page-next{
+            font-size: 75px;
+            color: white;
+            text-align: center;
+        }
+        .page-last:hover, .page-next:hover{
+            text-decoration: none;
+        }
+        .imgarrow{
+            text-align: right;
+            
+            
+            position: relative
+        }
+         .imgarrow img{
+            width: 100px;
+            height: 100px;
+           
+            position: relative;
+
+            text-align: right;
+        }
 
 
         }
@@ -692,6 +746,32 @@
                 left: -14rem;
                 opacity: 1;
                 color: white;
+            }
+            #news-1 {
+                font-size: 36px;
+                color: white;
+                font-family: 新細明體;
+                text-align: left;
+                margin-top: 55vh;
+                position: absolute;
+                left: 7%;
+                top: 250px;
+                z-index: 1;
+
+            }
+
+            #news-2,
+            #news-3,
+            #news-4 {
+                font-size: 36px;
+                color: white;
+                font-family: 新細明體;
+                text-align: left;
+                margin-top: 55vh;
+                position: absolute;
+                left: 5%;
+                top: 250px;
+                z-index: 1;
             }
 
 
@@ -821,23 +901,34 @@
                 padding: unset;
             }
 
-            #news-1,
+            #news-1 {
+                font-size: 26px;
+                color: white;
+                font-family: 微軟正黑體;
+                text-align: left;
+                margin-top: 160px;
+                position: absolute;
+                left: 3%;
+                top: 250px;
+                z-index: 1;
+
+            }
+
             #news-2,
             #news-3,
             #news-4 {
-                left: unset;
-                left: 4%;
-                margin: unset;
-                margin-top: 320px;
-                padding: unset;
-                margin-top: 80px;
+                font-size: 26px;
+                color: white;
+                font-family: 新細明體;
+                text-align: left;
+                margin-top: 160px;
                 position: absolute;
-                left: 12%;
-                font-size: 24px;
-                font-weight: 600;
-
-
+                left: 3%;
+                top: 250px;
+                z-index: 1;
             }
+
+
 
             #news-box1,
             #news-box3,
@@ -893,6 +984,9 @@
             .imgarrow img{
             width: 75px;
             height: 75px;
+        }
+        .forpad{
+            height: 50px;width: 100%;
         }
 
         }
@@ -957,9 +1051,17 @@
 
 
     <div class="main2">
-        <div class="row rowbox" style="padding: unset;margin:unset;">
-            <div class="col-4" id="inside-logo2" aria-readonly="true">
-                <img src="./img-最新消息/內文-logo.png" alt="" aria-readonly="false">
+        <div class="row" style="margin: unset;">
+            <div class="col-12" style="padding: unset;">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="row rowbox" style="padding: unset;margin:unset;">
+                            <div class="col-4 inside-logo2" >
+                                <img src="./img-最新消息/內文-logo.png" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="row" style="padding: unset;margin: unset;position:relative">
@@ -1044,7 +1146,7 @@
                     <br>
                     <br>
                     <br>
-                    <div class="row" style="margin: unset;">
+                    <div class="row" style="margin: unset;position: relative;">
                         <div class="col-xl-4 col-sm-2" style="padding: unset;">
 
                         </div>
@@ -1058,13 +1160,13 @@
                             </div>
 
                         </div>
-                        <a class="col-xl-4 col-sm-2 col-3 imgarrow" style="padding: unset;">
+                        <a class="col-xl-4 col-sm-2 col-3 imgarrow" style="padding: unset;" href="" >
                             <img src="./img-最新消息/top.png" alt="">
 
                         </a>
-                        
+                       
                     </div>
-                    <div class="row" style="height: 150px;width: 100%;"></div>
+                    <div class="row forpad"></div>
 
 
 
