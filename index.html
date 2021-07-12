@@ -79,11 +79,11 @@
         } */
 
 
-        .video-box {
-            width: 90%;
-            /* height: 90vh; */
+        /* .videobox {
+            width: 100%;
+            height: 90vh;
             margin: auto;
-        }
+        } */
 
 
 
@@ -127,6 +127,21 @@
         #video-text img {
             width: 640px;
             height: 92px;
+        }
+
+        .videobox {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+
+        .videobox iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
         }
 
         .main2 {
@@ -326,10 +341,7 @@
             margin: auto;
         }
 
-        .main2 iframe {
-            height: 900px;
 
-        }
 
         #map-pic {
             width: 100%;
@@ -652,14 +664,13 @@
         </div> -->
         <div class="container2">
             <div class="row" style="position: relative;width: 100%;margin: unset;padding: unset;overflow: hidden;">
-                <div class="col-12" style="padding: unset;margin: unset;">
+                <div class="videobox" >
 
 
-                    <iframe width="100%" height="1000px"
-                        src="https://www.youtube.com/embed/4AbN68ZgSm4?autoplay=1&mute=1&rel=0&loop=1&controls=0&playlist=4AbN68ZgSm4"
-                        frameborder="0" allowfullscreen></iframe>
-                        
-                        <!-- https://www.youtube.com/embed/4AbN68ZgSm4?rel=0&autoplay=1&mute=1&oop=1&playlist=4AbN68ZgSm4 -->
+                    <iframe src="https://www.youtube.com/embed/4AbN68ZgSm4?autoplay=1&mute=1&rel=0&loop=1&controls=0&playlist=4AbN68ZgSm4"
+                        frameborder="0" allowfullscreen="true"></iframe>
+
+                    <!-- https://www.youtube.com/embed/4AbN68ZgSm4?rel=0&autoplay=1&mute=1&oop=1&playlist=4AbN68ZgSm4 -->
                 </div>
                 <!-- <div class="video-box">
                     <video src="./img-index/test.mp4" loop autoplay id="myVideo"></video>
@@ -880,35 +891,35 @@
         function codefans() {
             var box = document.getElementById("video-logo");
             var box2 = document.getElementById("video-text");
-            box.style.display ="none";
+            box.style.display = "none";
             box2.style.display = "none"
         }
         function codefans2() {
             var box = document.getElementById("video-logo");
             var box2 = document.getElementById("video-text");
-            box.style.display ="block";
+            box.style.display = "block";
             box2.style.display = "block"
         }
         function codefans3() {
             var box = document.getElementById("video-logo");
             var box2 = document.getElementById("video-text");
-            box.style.display ="none";
+            box.style.display = "none";
             box2.style.display = "none"
         }
-        setTimeout("codefans()",0000);//3秒
-        setTimeout("codefans2()",5000);
-        setTimeout("codefans()",6500);
-        setTimeout("codefans2()",9000);
-        setTimeout("codefans3()",11000);
-        setTimeout("codefans2()",13500);
-        setTimeout("codefans()",32000);
-        setTimeout("codefans()",0000);//3秒
-        setTimeout("codefans2()",38000);
-        setTimeout("codefans()",39500);
-        setTimeout("codefans2()",42000);
-        setTimeout("codefans3()",44000);
-        setTimeout("codefans2()",46500);
-        setTimeout("codefans()",65000);
+        setTimeout("codefans()", 0000);//3秒
+        setTimeout("codefans2()", 6000);
+        setTimeout("codefans()", 7200);
+        setTimeout("codefans2()", 10000);
+        setTimeout("codefans3()", 12000);
+        setTimeout("codefans2()", 14500);
+        setTimeout("codefans()", 32000);
+        setTimeout("codefans()", 0000);//3秒
+        setTimeout("codefans2()", 39000);
+        setTimeout("codefans()", 40500);
+        setTimeout("codefans2()", 43000);
+        setTimeout("codefans3()", 45000);
+        setTimeout("codefans2()", 47500);
+        setTimeout("codefans()", 66000);
 
 
     </script>
