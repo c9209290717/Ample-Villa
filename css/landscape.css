@@ -9,14 +9,14 @@ main{
     position: absolute;
     top: 295px;
     left: 36%;
-    z-index: 1 !important;
+    z-index: 2 !important;
    
 }
 .picture-3 img{
     position: absolute;
     top: 488px;
     left: 0;
-    z-index: 2;
+    z-index: 1;
 }
 .picture-4 img{
     position: absolute;
