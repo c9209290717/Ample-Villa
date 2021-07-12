@@ -201,7 +201,7 @@
 
         .main2 #news-eng {
             color: white;
-            font-size: 250px;
+            font-size: 200px;
             font-family: 'Century Schoolbook', sans-serif;
             position: absolute;
             top: 180px;
@@ -287,11 +287,11 @@
         }
 
         #arrow img:nth-child(1) {
-            width: 100%;
+            width: 1200px;
             height: 50px;
 
             position: absolute;
-            left: -100px;
+            left: -6rem;
             top: 0%;
 
         }
@@ -310,12 +310,14 @@
             transform: translateX(100px);
             transition: 1s;
         }
+       
 
         #more {
             color: white;
             font-family: 'Century Schoolbook', sans-serif;
             font-size: 4rem;
-            margin-left: 1300px;
+            margin-left: 620px;
+           
 
         }
 
@@ -340,6 +342,19 @@
             width: 255px;
             margin: auto;
         }
+        .mapbox{
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%;
+        }
+        .mapbox iframe{
+            width: 94%;
+            height: 90%;
+            position:absolute;
+            top: 5%;
+            left: 3%;            
+        }
 
 
 
@@ -354,8 +369,159 @@
             font-size: 24px;
             letter-spacing: 6px;
         }
+        @media(max-width:1421px){
+            #arrow img:nth-child(1) {
+            width: 1000px;
+            height: 50px;
+
+            position: absolute;
+            left: -6rem;
+            top: 0%;
+
+        }
+
+        #arrow img:nth-child(2) {
+            width: 10px;
+            height: 50px;
+            position: absolute;
+            left: 500px;
+            top: 17px;
+        }
+
+
+       
+
+        #more {
+            color: white;
+            font-family: 'Century Schoolbook', sans-serif;
+            font-size: 4rem;
+            margin-left: 500px;
+           
+
+        }
+        }
+        @media(max-width:1220px){
+            
+            #arrow img:nth-child(1) {
+            width: 600px;
+            height: 50px;
+
+            position: absolute;
+            left: -6rem;
+            top: 0%;
+
+        }
+
+        #arrow img:nth-child(2) {
+            width: 10px;
+            height: 50px;
+            position: absolute;
+            left: 300px;
+            top: 17px;
+        }
+
+
+       
+
+        #more {
+            color: white;
+            font-family: 'Century Schoolbook', sans-serif;
+            font-size: 4rem;
+            margin-left:250px;
+           
+
+        }
+        
+        #news-box1,
+        #news-box3 {
+            padding-top: 220px;
+            position: relative;
+
+        }
+
+        #news-box2,
+        #news-box4 {
+            padding-top: 220px;
+            position: relative;
+        }
+
+
+
+        #news-1,
+        #news-3 {
+            font-size: 40px;
+            color: white;
+            font-family: 新細明體;
+            text-align: left;
+            margin-top: 55vh;
+            position: absolute;
+            left: 7%;
+            z-index: 1;
+
+        }
+
+        #news-2,
+        #news-4 {
+            font-size: 40px;
+            color: white;
+            font-family: 新細明體;
+            text-align: left;
+            margin-top: 55vh;
+            position: absolute;
+            left: 32%;
+            z-index: 1;
+        }
+
+        .newspic img {
+            width: 100%;
+            ;
+            height: 70vh;
+
+
+        }
+
+        #mday,
+        #mday2,
+        #mday3,
+        #mday4 {
+            font-family: 'Century Schoolbook', sans-serif;
+            font-size: 7rem;
+            transform: rotate(90deg);
+            position: absolute;
+            top: 15rem;
+            left: -16rem;
+            opacity: 1;
+            color: white;
+        }
+        }
 
         @media(max-width:1199px) {
+            .main2 #news {
+            color: white;
+            font-size: 80px;
+            /* font-family: 'Century Schoolbook', sans-serif; */
+            font-family: 微軟正黑體;
+            position: absolute;
+            top: 90px;
+            left: 2rem;
+            z-index: 1;
+            opacity: 0.5;
+
+        }
+
+        .main2 #news-eng {
+            color: white;
+            font-size: 170px;
+            font-family: 'Century Schoolbook', sans-serif;
+            position: absolute;
+            top: 180px;
+            left: 2rem;
+            z-index: 1;
+            opacity: 0.5;
+            transform: scale(1, 1.5);
+
+
+        }
 
             #news-1 {
                 font-size: 36px;
@@ -383,6 +549,67 @@
                 top: 520px;
                 z-index: 1;
             }
+            #news-4{
+                padding-bottom: 150px;
+            }
+            #arrow img:nth-child(1) {
+            width: 500px;
+            height: 40px;
+
+            position: absolute;
+            left: -10rem;
+            top: 0%;
+
+        }
+
+        #arrow img:nth-child(2) {
+            width: 10px;
+            height: 40px;
+            position: absolute;
+            left: 210px;
+            top: 17px;
+        }
+
+
+       
+
+        #more {
+            color: white;
+            font-family: 'Century Schoolbook', sans-serif;
+            font-size: 3rem;
+            margin-left:170px;
+           
+
+        }
+        }
+        @media(max-width:768px){
+            .main2 #news {
+            color: white;
+            font-size: 60px;
+            /* font-family: 'Century Schoolbook', sans-serif; */
+            font-family: 微軟正黑體;
+            position: absolute;
+            top: 90px;
+            left: 1rem;
+            z-index: 1;
+            opacity: 0.5;
+
+        }
+
+        .main2 #news-eng {
+            color: white;
+            font-size: 120px;
+            font-family: 'Century Schoolbook', sans-serif;
+            position: absolute;
+            top: 180px;
+            left: 1rem;
+            z-index: 1;
+            opacity: 0.5;
+            transform: scale(1, 1.5);
+
+
+        }
+
         }
 
 
@@ -439,9 +666,10 @@
             }
 
             #news-backgro {
-                height: calc(100vh - 50px);
+                height: calc(100vh - 100px);
                 min-height: 736px;
                 overflow-y: hidden;
+                overflow-x: scroll;
             }
 
             #inside-logo {
@@ -513,15 +741,19 @@
                 left: unset;
                 left: 4%;
                 margin: unset;
-                margin-top: 320px;
+              
                 padding: unset;
                 font-size: 40px;
-                margin-top: 315px;
+                margin-top: 0px;
                 position: absolute;
                 left: 7%;
                 font-size: 24px;
                 font-weight: 600;
 
+
+            }
+            #news-1{
+                margin-top: -80px;
 
             }
 
@@ -556,7 +788,8 @@
 
             #more {
                 font-size: 24px;
-                margin-left: 20px
+                margin-left: 190px;
+                margin-top: 20px;
             }
 
             #mday,
@@ -714,7 +947,7 @@
                         <div class="col-xl-3"></div>
                         <div class="col-xl-6 col-12 newspic" style="position: relative;display: flex;"><img
                                 alt="gallery" class="w-full object-cover h-full object-center block"
-                                src="https://dummyimage.com/501x301">
+                                src="./img-最新消息/最新消息-圖1.png">
                             <div class="row">
                                 <div class="col-3" style="padding: unset;">
                                     <span id="mday"></span>
@@ -732,7 +965,7 @@
                         <div class="col-xl-6"></div>
                         <div class="col-xl-6 col-12 newspic" style="position: relative;display: flex;"><img
                                 alt="gallery" class="w-full object-cover h-full object-center block"
-                                src="https://dummyimage.com/501x301">
+                                src="./img-最新消息/最新消息-圖2.png">
                             <div class="row">
                                 <div class="col-3" style="padding: unset;">
                                     <span id="mday2"></span>
@@ -749,7 +982,7 @@
                         <div class="col-xl-3"></div>
                         <div class="col-xl-6 col-12 newspic" style="position: relative;display: flex;"><img
                                 alt="gallery" class="w-full object-cover h-full object-center block"
-                                src="https://dummyimage.com/501x301">
+                                src="./img-最新消息/最新消息-圖3.png">
                             <div class="row">
                                 <div class="col-3" style="padding: unset;">
                                     <span id="mday3"></span>
@@ -767,7 +1000,7 @@
                         <div class="col-xl-6"></div>
                         <div class="col-xl-6 col-12 newspic" style="position: relative;display: flex;"><img
                                 alt="gallery" class="w-full object-cover h-full object-center block"
-                                src="https://dummyimage.com/501x301">
+                                src="./img-最新消息/最新消息-圖4.png">
                             <div class="row">
                                 <div class="col-3" style="padding: unset;">
                                     <span id="mday4"></span>
@@ -793,7 +1026,9 @@
                         <img src="./img-index/內文-指標2.png" alt="">
                     </a>
                 </div>
-                <div class="col-3" id="more" style="padding: unset;">More</div>
+                <div class="col-3" style="padding: unset;">
+                    <div id="more" >More</div>
+                </div>
 
             </div>
 
@@ -814,7 +1049,7 @@
         </div>
         <div class="row" style="position:relative;margin: unset;margin-top: 40px;">
             <div class="container3">
-                <div class="col-12" style="padding: unset;background-color: rgb(223, 188, 223);padding: 40px;">
+                <div class="col-12 mapbox" style="background-color: rgb(223, 188, 223);">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1806.200026829416!2d121.86017658530668!3d25.122162344672223!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8b917afc400df58b!2sAmple%20Villa!5e0!3m2!1szh-TW!2stw!4v1625465980639!5m2!1szh-TW!2stw"
                         width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
