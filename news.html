@@ -259,32 +259,13 @@
             opacity: 1;
             color: white;
         }
-
-        #arrow {
-            margin: unset;
-            position: absolute;
-            top: 1100px;
-
-        }
-
-        #arrow img {
-            width: 107%;
-            height: 50px;
-
-        }
-
-        #arrow:hover {
-
-            transform: scale(1.2);
-            transition: 1s;
-        }
-
-        #more {
+        .page-last, .page, .page-next{
+            font-size: 75px;
             color: white;
-            font-family: 'Century Schoolbook', sans-serif;
-            font-size: 4rem;
-            margin-left: 60px;
-
+            text-align: center;
+        }
+        .imgarrow{
+            justify-content: flex-end;
         }
 
         @media(max-width:1199px) {
@@ -603,9 +584,9 @@
                 padding-top: 20px;
             } */
 
-            #news-backgro .container2 {
-                /* display: flex; */
-            }
+            /* #news-backgro .container2 {
+                display: flex;
+            } */
 
             .newspic img {
                 width: 100%;
@@ -829,7 +810,33 @@
 
 
                     </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="row" style="margin: unset;">
+                        <div class="col-4" style="padding: unset;">
+
+                        </div>
+                        <div class="col-4" style="padding: unset;margin: auto;">
+                            <div class="row" style="margin: auto;">
+                                <a class="col-2 page-last" style="padding: unset;">〈</a>
+                                <a class="col-2 page" style="padding: unset;">1</a>
+                                <a class="col-2 page" style="padding: unset;">2</a>
+                                <a class="col-2 page" style="padding: unset;">3</a>
+                                <a class="col-2 page-next" style="padding: unset;">〉</a>
+                            </div>
+
+                        </div>
+                        <a class="col-4 imgarrow" style="padding: unset;">
+                            <img src="./img-最新消息/top.png" alt="">
+
+                        </a>
+                        
+                    </div>
                     <div class="row" style="height: 150px;width: 100%;"></div>
+
 
 
 
