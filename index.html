@@ -155,7 +155,7 @@
         }
 
         #news-backgro {
-            background-color: rgb(93, 194, 235);
+            background-color: rgb(138, 185, 223);
             opacity: 0.8;
             background-image: url(./關於我們-底圖-大.png);
             padding: unset;
@@ -163,7 +163,7 @@
             height: 1200px;
             position: relative;
             overflow: scroll;
-            /* overflow-x: hidden; */
+            overflow-x: hidden;
             background-attachment: scroll;
 
         }
@@ -183,13 +183,14 @@
 
         .main2 #news-eng {
             color: white;
-            font-size: 13vw;
+            font-size: 250px;
             font-family: 'Century Schoolbook', sans-serif;
             position: absolute;
-            top: 150px;
+            top: 180px;
             left: 9rem;
             z-index: 1;
             opacity: 0.5;
+            transform: scale(1,1.5);
 
 
         }
@@ -247,11 +248,11 @@
         #mday3,
         #mday4 {
             font-family: 'Century Schoolbook', sans-serif;
-            font-size: 8rem;
+            font-size: 7rem;
             transform: rotate(90deg);
             position: absolute;
-            top: 20rem;
-            left: -19rem;
+            top: 15rem;
+            left: -16rem;
             opacity: 1;
             color: white;
         }
@@ -262,14 +263,18 @@
             top: 1100px;
 
         }
+        #arrow .col-8{
+            position: relative;
+        }
         #arrow img{
-             width: 107%;height: 50px;
+             width: 100%;height: 50px;
 
         }
+        
 
         #arrow:hover {
 
-            transform: scale(1.2);
+            transform: scale(1.5,1);
             transition: 1s;
         }
 
@@ -317,6 +322,34 @@
             font-family: 新細明體;
             font-size: 24px;
             letter-spacing: 6px;
+        }@media(max-width:1199px){
+            
+            #news-1 {
+                font-size: 36px;
+                color: white;
+                font-family: 新細明體;
+                text-align: left;
+                margin-top: 250px;
+                position: absolute;
+                left: 0%;
+                top: 600px;
+                z-index: 1;
+
+            }
+
+            #news-2,
+            #news-3,
+            #news-4 {
+                font-size: 36px;
+                color: white;
+                font-family: 新細明體;
+                text-align: left;
+                margin-top: 330px;
+                position: absolute;
+                left: 0%;
+                top: 520px;
+                z-index: 1;
+            }
         }
 
 
@@ -486,8 +519,8 @@
             #mday3,
             #mday4 {
                 font-size: 3rem;
-                top: calc(50vh - 240px);
-                left: -6rem;
+                top: calc(50vh - 300px);
+                left: -6.5rem;
                 z-index: 2;
 
 
@@ -582,11 +615,9 @@
         <div class="container2">
             <div class="row" style="position: relative;width: 100%;margin: unset;padding: unset;overflow: hidden;">
                 <div class="col-12" style="padding: unset;margin: unset;">
-                    <!-- <img alt="gallery" class="w-full object-cover h-full object-center block"
-                        src="https://dummyimage.com/501x301" id="videoplay"> -->
-                        <video loop autoplay id="myVideo" width="100%" height="900px">
-                            <source src="https://youtu.be/4AbN68ZgSm4" type="video/mp4">
-                        </video>    
+                   
+                    
+                        <iframe width="100%" height="1000px" src="https://www.youtube.com/embed/4AbN68ZgSm4?autoplay=1&mute=1&oop=1&playlist=4AbN68ZgSm4"frameborder="0" allowfullscreen="allowfullscreen" volumn="20"></iframe>  
                         
 
                 </div>
@@ -626,11 +657,11 @@
             <div class="col-12" id="news-backgro">
                 <div class="container2" >
                     <div class="row" id="news-box1">
-                        <div class="col-xl-9" id="news-1">
+                        <div class="col-xl-9 col-9" id="news-1">
                             三月是雙魚和牡羊朋友的大日子
                         </div>
                         <div class="col-xl-3"></div>
-                        <div class="col-xl-6 newspic" style="position: relative;display: flex;"><img alt="gallery"
+                        <div class="col-xl-6 col-12 newspic" style="position: relative;display: flex;"><img alt="gallery"
                                 class="w-full object-cover h-full object-center block"
                                 src="https://dummyimage.com/501x301">
                             <div class="row">
@@ -644,11 +675,11 @@
 
                     <div class="row" id="news-box2">
 
-                        <div class="col-xl-9" id="news-2">
+                        <div class="col-xl-9 col-9" id="news-2">
                             三月是雙魚和牡羊朋友的大日子
                         </div>
                         <div class="col-xl-6"></div>
-                        <div class="col-xl-6 newspic" style="position: relative;display: flex;"><img alt="gallery"
+                        <div class="col-xl-6 col-12 newspic" style="position: relative;display: flex;"><img alt="gallery"
                                 class="w-full object-cover h-full object-center block"
                                 src="https://dummyimage.com/501x301">
                             <div class="row">
@@ -661,11 +692,11 @@
 
                     </div>
                     <div class="row" id="news-box3">
-                        <div class="col-xl-9" id="news-3">
+                        <div class="col-xl-9 col-9" id="news-3">
                             三月是雙魚和牡羊朋友的大日子
                         </div>
                         <div class="col-xl-3"></div>
-                        <div class="col-xl-6 newspic" style="position: relative;display: flex;"><img alt="gallery"
+                        <div class="col-xl-6 col-12 newspic" style="position: relative;display: flex;"><img alt="gallery"
                                 class="w-full object-cover h-full object-center block"
                                 src="https://dummyimage.com/501x301">
                             <div class="row">
@@ -679,11 +710,11 @@
 
                     <div class="row" id="news-box4">
 
-                        <div class="col-xl-9" id="news-4">
+                        <div class="col-xl-9 col-9" id="news-4">
                             三月是雙魚和牡羊朋友的大日子
                         </div>
                         <div class="col-xl-6"></div>
-                        <div class="col-xl-6 newspic" style="position: relative;display: flex;"><img alt="gallery"
+                        <div class="col-xl-6 col-12 newspic" style="position: relative;display: flex;"><img alt="gallery"
                                 class="w-full object-cover h-full object-center block"
                                 src="https://dummyimage.com/501x301">
                             <div class="row">
@@ -705,11 +736,13 @@
 
             </div>
             <div class="row" id="arrow">
-                <div class="col-8">
+                <div class="col-8" style="padding: unset;">
                     <a href="" style="text-decoration: none;color: white;">
-                        <img src="./img-index/內文-指標1.png" alt=""></a>
+                        <img src="./img-index/內文-指標1.png" alt="">
+                        <img src="./img-index/內文-指標2.png" alt="">
+                    </a>
                 </div>
-                <div class="col-3" id="more">More</div>
+                <div class="col-3" id="more" style="padding: unset;">More</div>
 
             </div>
 
