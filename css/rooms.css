@@ -320,13 +320,17 @@ main .container {
     top: -100px;
     right: -150px;
     z-index: 3;
-    animation-name: pattern;
+
+}
+
+.le-0{
+    animation-name: le-0;
     animation-duration: 4s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
 
-@keyframes pattern {
+@keyframes le-0 {
     from {
         transform: translate(0px, 0px)rotate((0deg));
 
