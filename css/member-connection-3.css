@@ -131,15 +131,7 @@ a:hover{
 .btn-group-1{
     position: relative;
 }
-.btn-group-1::after{
-    content: " ";
-    position: absolute;
-    top: 740px;
-    right: 12%;
-    width: 76%;
-    height: 5px;
-    background-color: rgb(218, 240, 251);
-}
+
 .profile-size{
     width: 380px;
     height: 60px;
@@ -148,12 +140,12 @@ a:hover{
 .button-5{
    position: relative;
 }
-.button-5 a{
+.button-5 a {
     font-size: 26px;
     background-color: rgb(123, 177, 224);
     position: absolute;
-    top: -170px;
-    right: 12%;
+    top: -129px;
+    right: 14%;
 }
 @media(max-width:1450px){
     .btn-group-1 a {
@@ -168,6 +160,15 @@ a:hover{
     .btn-group-1 a {
         width: 250px;
     }    
+}
+@media(max-width:1124px){
+    .button-5 a {
+        font-size: 26px;
+        background-color: rgb(123, 177, 224);
+        position: absolute;
+        top: -107px;
+        right: 14%;
+    }
 }
 @media(max-width:970px){
     .btn-group-1::after {
