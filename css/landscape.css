@@ -265,8 +265,8 @@ main{
         font-size: 20px;
       
     }
-    .picture-15 img{
-       width: 60%;
+    .picture-15 img {
+        width: 57%;
     }
 }
 @media(max-width:1240px){
@@ -359,6 +359,11 @@ main{
     }
     .picture-14 img {
         width: 45%;
+    }
+}
+@media(max-width:950px){
+    .picture-15 img {
+        width: 68%;
     }
 }
 @media(max-width:865px){
@@ -558,7 +563,7 @@ main{
         right: 0;
     }
     .picture-15 img {
-        width: 61%;
+        width: 95%;
         position: absolute;
         top: 2814px;
         left: 0;
@@ -576,6 +581,20 @@ main{
         position: relative;
         height: 3345px;
     }
+    .t-3 {
+        width: 293px;
+        font-size: 18px;
+        position: absolute;
+        top: 692px;
+        left: 27%;
+    }
+    .t-3-3{
+        width: 293px;
+        font-size: 18px;
+        position: absolute;
+        top: 926px;
+        left: 27%;
+    }
     .t-4{
     
         position: absolute;
@@ -589,7 +608,7 @@ main{
         width: 287px;
         position: absolute;
         top: 2304px;
-        left: 31%;
+        left: 28%;
         font-size: 18px;
         margin: unset;
     }
@@ -597,7 +616,7 @@ main{
         width: 287px;
         position: absolute;
         top: 2505px;
-        left: 31%;
+        left: 28%;
         font-size: 18px;
         margin: unset;
       
@@ -627,7 +646,8 @@ main{
         right: 0;
     }
     .picture-15 img {
-        width: 71%;
+        width: 95%;
+        height: 420px;
         position: absolute;
         top: 2635px;
         left: 0;
@@ -643,7 +663,7 @@ main{
     main {
         width: 100%;
         position: relative;
-        height: 2861px;
+        height: 2647px;
     }
     .t-1 {
         font-size: 36px;
@@ -752,15 +772,15 @@ main{
         right: 0;
     }
     .picture-15 img {
-        width: 79%;
+        height: 220px;
         position: absolute;
         top: 2210px;
         left: 0;
     }
     .picture-16 img {
-        width: 59%;
+        width: 56%;
         position: absolute;
-        top: 2644px;
+        top: 2406px;
         right: 0;
     }
 }
