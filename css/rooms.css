@@ -320,18 +320,126 @@ main .container {
     top: -100px;
     right: -150px;
     z-index: 3;
+    animation-name: pattern;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
+
+@keyframes pattern {
+    from {
+        transform: translate(0px, 0px)rotate((0deg));
+
+    }
+
+    25% {
+        transform: translate(0px, 00px)rotate(45deg);
+    }
+
+    50% {
+        transform:rotate(90deg);
+
+    }
+
+    to {
+        transform: translate(0, -0px)rotate(0deg);
+    }
+}
+
 .pattern-ri-2{
     position: absolute;
     top: -100px;
     right: -450px;
     z-index: 3;
+    animation-name: pattern-ri-2;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes pattern-ri-2 {
+    from {
+        transform: translate(0px, 0px)rotate((0deg));
+
+    }
+
+    /* 25% {
+        transform: translate(0px, 00px)rotate(45deg);
+    } */
+
+    50% {
+        transform: translate(10px, 40px)rotate(0deg);
+
+    }
+
+    to {
+        transform: translate(0, -0px)rotate(0deg);
+    }
 }
 .pattern-le{
     position: absolute;
     top: -100px;
     left: -150px;
     z-index: 3;
+}
+
+.le-1{
+    animation-name: le-1;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes le-1 {
+    from {
+        transform: translate(0px, 0px)rotate((0deg));
+
+    }
+
+
+    50% {
+        transform:rotate(70deg);
+
+    }
+
+
+    to {
+        transform: translate(0, 0px)rotate(360deg);
+    }
+}
+
+.le-2{
+    animation-name: le-2;
+    animation-duration: 16s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+
+@keyframes le-2 {
+    from {
+        transform: translate(0px, 0px)rotate((0deg));
+
+    }
+
+    25% {
+        transform:rotate(90deg);
+
+    }
+
+    50% {
+        transform:rotate(180deg);
+
+    }
+
+    75% {
+        transform:rotate(270deg);
+
+    }
+
+    to {
+        transform: translate(0, 0px)rotate(360deg);
+    }
 }
 
 
