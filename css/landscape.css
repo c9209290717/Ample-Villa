@@ -695,7 +695,7 @@ main{
     }
     .t-4 {
         position: absolute;
-        top: 1781px;
+        top: 1723px;
         left: 28%;
         font-size: 24px;
         margin: unset;
@@ -703,16 +703,16 @@ main{
     .t-5 {
         width: 244px;
         position: absolute;
-        top: 1825px;
-        left: 14%;
+        top: 1772px;
+        left: 16%;
         font-size: 18px;
         margin: unset;
     }
     .t-5-5 {
         width: 244px;
         position: absolute;
-        top: 2058px;
-        left: 14%;
+        top: 2003px;
+        left: 16%;
         font-size: 18px;
         margin: unset;
     }
@@ -767,6 +767,7 @@ main{
     }
     .picture-14 img {
         width: 84%;
+        height: 280px;
         position: absolute;
         top: 1344px;
         right: 0;
@@ -781,6 +782,50 @@ main{
         width: 56%;
         position: absolute;
         top: 2406px;
+        right: 0;
+    }
+}
+@media(max-width:375px){
+    .t-4 {
+        position: absolute;
+        top: 1621px;
+        left: 28%;
+        font-size: 24px;
+        margin: unset;
+    }
+    .t-5 {
+        width: 244px;
+        position: absolute;
+        top: 1671px;
+        left: 16%;
+        font-size: 18px;
+        margin: unset;
+    }
+    .t-5-5 {
+        width: 244px;
+        position: absolute;
+        top: 1920px;
+        left: 16%;
+        font-size: 18px;
+        margin: unset;
+    }
+    .picture-14 img {
+        width: 84%;
+        height: 196px;
+        position: absolute;
+        top: 1344px;
+        right: 0;
+    }
+    .picture-15 img {
+        height: 220px;
+        position: absolute;
+        top: 2130px;
+        left: 0;
+    }
+    .picture-16 img {
+        width: 56%;
+        position: absolute;
+        top: 2332px;
         right: 0;
     }
 }
